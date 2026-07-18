@@ -2,7 +2,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 export default function Hero() {
-  const images = ["/hero.png", "/hero2.png"];
+  const desktopImages = ["/hero.png", "/hero2.png"];
+const mobileImages = ["/hero1mobile.png", "/hero2mobile.png"];
 
   const [currentBanner, setCurrentBanner] = useState(0);
   const [search, setSearch] = useState("");
@@ -181,7 +182,7 @@ export default function Hero() {
 
             {/* Search Box */}
 
-            <div className="mt-8">
+           <div className="mt-8 hidden md:block">
 
               <div className="bg-white rounded-full p-2 flex items-center max-w-xl mx-auto lg:mx-0 shadow-xl">
 
@@ -215,12 +216,23 @@ export default function Hero() {
 
           <div className="flex justify-center">
 
-            <img
-              key={currentBanner}
-              src={images[currentBanner]}
-              alt="Hero Banner"
-              className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-5xl rounded-3xl shadow-2xl animate-[slideIn_0.8s_ease]"
-            />
+           <>
+  {/* Desktop Banner */}
+  <img
+    key={`desktop-${currentBanner}`}
+    src={desktopImages[currentBanner]}
+    alt="Hero Banner"
+    className="hidden lg:block w-full max-w-2xl xl:max-w-5xl rounded-3xl shadow-2xl animate-[slideIn_0.8s_ease]"
+  />
+
+  {/* Mobile Banner */}
+  <img
+    key={`mobile-${currentBanner}`}
+    src={mobileImages[currentBanner]}
+    alt="Hero Mobile Banner"
+    className="block lg:hidden w-full max-w-md rounded-2xl shadow-xl animate-[slideIn_0.8s_ease]"
+  />
+</>
 
           </div>
 
