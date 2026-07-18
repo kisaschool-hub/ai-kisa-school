@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import { useState } from "react";
 
 function Admission() {
@@ -28,6 +29,13 @@ function Admission() {
 
   return (
     <>
+      <SEO
+        title="Admissions | KISA Model School"
+        description="Apply for admission at KISA Model School and start your journey in Artificial Intelligence, Digital Skills and modern education."
+        url="https://aikisaschool.com/admission"
+        image="https://aikisaschool.com/hero.png"
+      />
+
       {/* Hero */}
       <section className="pt-32 pb-16 bg-[#F5F8FC]">
         <div className="max-w-7xl mx-auto px-6 text-center">
@@ -71,19 +79,19 @@ function Admission() {
                 className="w-full border border-blue-100 rounded-xl px-5 py-3 outline-none focus:border-[#2F3D7C]"
               />
 
-            <input
-  type="text"
-  name="cnic"
-  placeholder="CNIC Number (13 Digits)"
-  required
-  maxLength={13}
-  pattern="[0-9]{13}"
-  inputMode="numeric"
-  onInput={(e) => {
-    e.target.value = e.target.value.replace(/\D/g, "").slice(0, 13);
-  }}
-  className="w-full border border-blue-100 rounded-xl px-5 py-3 outline-none focus:border-[#2F3D7C]"
-/>
+              <input
+                type="text"
+                name="cnic"
+                placeholder="CNIC Number (13 Digits)"
+                required
+                maxLength={13}
+                pattern="[0-9]{13}"
+                inputMode="numeric"
+                onInput={(e) => {
+                  e.target.value = e.target.value.replace(/\D/g, "").slice(0, 13);
+                }}
+                className="w-full border border-blue-100 rounded-xl px-5 py-3 outline-none focus:border-[#2F3D7C]"
+              />
 
               <input
                 type="number"

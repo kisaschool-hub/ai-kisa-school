@@ -1,24 +1,35 @@
+import SEO from "../components/SEO";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
 function Contact() {
   return (
     <>
+      <SEO
+        title="Contact Us | KISA Model School"
+        description="Contact KISA Model School for admissions, AI courses, digital skills programs and student support."
+        url="https://aikisaschool.com/contact"
+        image="https://aikisaschool.com/hero.png"
+      />
+
       {/* Hero */}
-      <section className="pt-28 pb-12 bg-white border-b">
+      <section className="pt-32 pb-16 bg-[#F5F8FC]">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <p className="uppercase tracking-[6px] text-[#74BDE8] font-semibold">
+
+          <span className="inline-block px-6 py-2 rounded-full bg-[#74BDE8]/20 text-[#2F3D7C] font-semibold uppercase tracking-[3px]">
             CONTACT US
-          </p>
+          </span>
 
           <h1 className="text-5xl lg:text-6xl font-extrabold text-[#2F3D7C] mt-4">
             Get In Touch
           </h1>
+
         </div>
       </section>
 
       {/* Contact */}
       <section className="bg-[#F8FAFC] py-14">
         <div className="max-w-7xl mx-auto px-6">
+
           <div className="grid lg:grid-cols-2 gap-6">
 
             {/* Left */}
@@ -33,21 +44,19 @@ function Contact() {
                 method="POST"
                 className="space-y-4"
               >
-                {/* Web3Forms Access Key */}
+
                 <input
                   type="hidden"
                   name="access_key"
-                 value="9304ab5b-a426-49af-99bd-4261ae7ce561"
+                  value="9304ab5b-a426-49af-99bd-4261ae7ce561"
                 />
 
-                {/* Email Subject */}
                 <input
                   type="hidden"
                   name="subject"
                   value="New Contact Form Submission - AI KISA School"
                 />
 
-                {/* Redirect */}
                 <input
                   type="hidden"
                   name="redirect"
@@ -76,17 +85,11 @@ function Contact() {
                   placeholder="Phone Number"
                   className="w-full border border-blue-100 rounded-xl px-5 py-3 outline-none focus:border-[#2F3D7C]"
                 />
-<input
-  type="text"
-  name="subject"
-  placeholder="Subject"
-  required
-  className="w-full border border-blue-100 rounded-xl px-5 py-3 outline-none focus:border-[#2F3D7C]"
-/>
+
                 <textarea
                   name="message"
                   rows="5"
-                  placeholder="Write your message..."
+                  placeholder="Your Message"
                   required
                   className="w-full border border-blue-100 rounded-xl px-5 py-3 outline-none focus:border-[#2F3D7C]"
                 ></textarea>
@@ -97,7 +100,9 @@ function Contact() {
                 >
                   Send Message
                 </button>
+
               </form>
+
             </div>
 
             {/* Right */}
@@ -154,6 +159,7 @@ function Contact() {
             </div>
 
           </div>
+
         </div>
       </section>
     </>

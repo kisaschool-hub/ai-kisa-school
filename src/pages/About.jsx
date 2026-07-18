@@ -7,9 +7,17 @@ import {
   ArrowRight,
   Phone,
 } from "lucide-react";
+import SEO from "../components/SEO";
 
 const About = () => {
   return (
+    <>
+      <SEO
+        title="About KISA Model School | AI Education Pakistan"
+        description="Learn about KISA Model School's journey, mission, vision and commitment to AI-powered education in Pakistan."
+        url="https://aikisaschool.com/about"
+        image="https://aikisaschool.com/hero.png"
+      />
     <main className="bg-gradient-to-b from-white via-[#EEF6FF] to-[#F5F8FC] text-[#1F2937]">
 
       {/* ================= HERO ================= */}
@@ -557,6 +565,7 @@ const About = () => {
 
 </section>
 </main>
+    </>
   );
 };
 
