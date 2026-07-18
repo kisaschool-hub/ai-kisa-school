@@ -117,7 +117,7 @@ export default function Hero() {
     ) {
       navigate("/iqbal-detail");
     }
-   
+
     // About
     else if (value === "about") {
       navigate("/about");
@@ -216,25 +216,31 @@ export default function Hero() {
 
           {/* Right Side */}
 
-          <div className="flex justify-center items-center">
+          <div className="relative flex justify-center items-center w-full h-[260px] sm:h-[380px] lg:h-[520px]">
 
-            {/* Desktop Slider */}
+            {/* Desktop Images */}
+            {desktopImages.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt="Hero Banner"
+                className={`hidden lg:block absolute w-full max-w-2xl xl:max-w-5xl rounded-3xl shadow-2xl transition-opacity duration-1000 ease-in-out ${
+                  currentBanner === index ? "opacity-100" : "opacity-0"
+                }`}
+              />
+            ))}
 
-            <img
-              key={`desktop-${currentBanner}`}
-              src={desktopImages[currentBanner]}
-              alt="Hero Banner"
-              className="hidden lg:block w-full max-w-2xl xl:max-w-5xl rounded-3xl shadow-2xl transition-all duration-700 hover:scale-105"
-            />
-
-            {/* Mobile Slider */}
-
-            <img
-              key={`mobile-${currentBanner}`}
-              src={mobileImages[currentBanner]}
-              alt="Hero Mobile"
-              className="block lg:hidden w-full max-w-md rounded-2xl shadow-xl transition-all duration-700"
-            />
+            {/* Mobile Images */}
+            {mobileImages.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt="Hero Mobile"
+                className={`block lg:hidden absolute w-full max-w-md rounded-2xl shadow-xl transition-opacity duration-1000 ease-in-out ${
+                  currentBanner === index ? "opacity-100" : "opacity-0"
+                }`}
+              />
+            ))}
 
           </div>
 
