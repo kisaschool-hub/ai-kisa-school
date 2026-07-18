@@ -32,7 +32,7 @@ const About = () => {
 
               </span>
 
-            <h1 className="mt-8 text-5xl lg:text-6xl font-bold leading-tight !text-white">
+            <h1 className="mt-8 text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight !text-white">
                 Building Future
                 <br />
                 AI Leaders
@@ -95,7 +95,7 @@ const About = () => {
 
             {/* RIGHT */}
 
-            <div className="bg-white rounded-[40px] shadow-xl p-8">
+           <div className="hidden lg:block bg-white rounded-[40px] shadow-xl p-8">
 
               <div className="grid grid-cols-2 gap-6">
 
