@@ -136,43 +136,43 @@ export default function Hero() {
   };
 
   return (
-    <section className="bg-gradient-to-r from-[#2F3D7C] to-[#74BDE8] text-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section className="bg-gradient-to-r from-[#2F3D7C] to-[#6EC6FF] text-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-12 lg:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Left Side */}
-          <div>
+          <div className="text-center lg:text-left">
 
-            <span className="bg-white/20 px-4 py-2 rounded-full text-sm">
+            <span className="inline-block bg-white/20 px-4 py-2 rounded-full text-xs sm:text-sm">
               🎓 Admissions Open 2026-27
             </span>
 
-            <h1
-              className="text-4xl lg:text-6xl font-extrabold leading-tight mt-6"
-              style={{ color: "#ffffff" }}
-            >
-              Learn AI,
-              <br />
-              Build Your Future
-            </h1>
+          <h1
+  className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight"
+  style={{ color: "#ffffff" }}
+>
+  Learn AI,
+  <br />
+  Build Your Future
+</h1>
 
-            <p className="mt-6 text-lg text-gray-100 max-w-xl">
+            <p className="mt-6 text-base sm:text-lg text-gray-100 max-w-xl mx-auto lg:mx-0">
               AI KISA School prepares students with Artificial Intelligence,
               Digital Skills and Modern Education for tomorrow's world.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
 
               <Link
                 to="/courses"
-                className="bg-white text-[#2F3D7C] px-6 py-3 rounded-full font-bold hover:scale-105 duration-300"
+                className="bg-white text-[#2F3D7C] px-6 py-3 rounded-full font-bold hover:scale-105 duration-300 text-center"
               >
                 Explore Programs
               </Link>
 
               <Link
                 to="/admission"
-                className="border border-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-[#2F3D7C] duration-300"
+                className="border border-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-[#2F3D7C] duration-300 text-center"
               >
                 Apply Now
               </Link>
@@ -183,7 +183,7 @@ export default function Hero() {
 
             <div className="mt-8">
 
-              <div className="bg-white rounded-full p-2 flex items-center shadow-xl max-w-xl">
+              <div className="bg-white rounded-full p-2 flex items-center max-w-xl mx-auto lg:mx-0 shadow-xl">
 
                 <input
                   type="text"
@@ -194,13 +194,13 @@ export default function Hero() {
                       handleSearch();
                     }
                   }}
-                  placeholder="Search courses, admission, achievements..."
-                  className="flex-1 px-5 py-3 rounded-full outline-none text-gray-700"
+                  placeholder="Search courses..."
+                  className="flex-1 min-w-0 px-4 py-3 rounded-full outline-none text-gray-700 text-sm sm:text-base"
                 />
 
                 <button
                   onClick={handleSearch}
-                  className="bg-[#2F3D7C] text-white px-8 py-3 rounded-full hover:bg-[#4E82BE] duration-300"
+                  className="bg-[#2F3D7C] text-white px-5 sm:px-8 py-3 rounded-full whitespace-nowrap hover:bg-[#4E82BE] duration-300"
                 >
                   Search
                 </button>
@@ -213,13 +213,13 @@ export default function Hero() {
 
           {/* Right Side */}
 
-          <div className="flex justify-center items-center overflow-hidden">
+          <div className="flex justify-center">
 
             <img
               key={currentBanner}
               src={images[currentBanner]}
               alt="Hero Banner"
-              className="w-full max-w-2xl lg:max-w-5xl xl:max-w-6xl rounded-3xl shadow-2xl animate-[slideIn_0.8s_ease]"
+              className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-5xl rounded-3xl shadow-2xl animate-[slideIn_0.8s_ease]"
             />
 
           </div>
