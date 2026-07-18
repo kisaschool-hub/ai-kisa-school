@@ -168,14 +168,14 @@ export default function Hero() {
 
               <Link
                 to="/courses"
-                className="bg-white text-[#2F3D7C] px-6 py-3 rounded-full font-bold hover:scale-105 duration-300 text-center"
+                className="bg-white text-[#2F3D7C] px-6 py-3 rounded-full font-bold text-center"
               >
                 Explore Programs
               </Link>
 
               <Link
                 to="/admission"
-                className="border border-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-[#2F3D7C] duration-300 text-center"
+                className="border border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-[#2F3D7C] text-center"
               >
                 Apply Now
               </Link>
@@ -236,7 +236,7 @@ export default function Hero() {
                 key={index}
                 src={image}
                 alt="Hero Mobile"
-                className={`block lg:hidden absolute w-full max-w-md rounded-2xl shadow-xl transition-opacity duration-1000 ease-in-out ${
+                className={`block lg:hidden absolute w-full h-auto object-contain rounded-2xl transition-opacity duration-1000 ease-in-out ${
                   currentBanner === index ? "opacity-100" : "opacity-0"
                 }`}
               />
