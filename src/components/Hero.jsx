@@ -164,7 +164,7 @@ export default function Hero() {
               Digital Skills and Modern Education for tomorrow's world.
             </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div className="mt-8 flex flex-col gap-4 justify-center lg:flex-row lg:justify-start">
 
               <Link
                 to="/courses"
@@ -216,7 +216,7 @@ export default function Hero() {
 
           {/* Right Side */}
 
-          <div className="relative flex justify-center items-center w-full h-[260px] sm:h-[380px] lg:h-[520px]">
+          <div className="relative flex justify-center items-center w-full">
 
             {/* Desktop Images */}
             {desktopImages.map((image, index) => (
@@ -224,9 +224,9 @@ export default function Hero() {
                 key={index}
                 src={image}
                 alt="Hero Banner"
-                className={`hidden lg:block absolute w-full max-w-2xl xl:max-w-5xl rounded-3xl shadow-2xl transition-opacity duration-1000 ease-in-out ${
-                  currentBanner === index ? "opacity-100" : "opacity-0"
-                }`}
+               className={`hidden lg:block absolute w-full max-w-2xl xl:max-w-5xl rounded-3xl shadow-2xl transition-opacity duration-1000 ease-in-out ${
+  currentBanner === index ? "opacity-100" : "opacity-0"
+}`}
               />
             ))}
 
@@ -236,9 +236,9 @@ export default function Hero() {
                 key={index}
                 src={image}
                 alt="Hero Mobile"
-                className={`block lg:hidden absolute w-full h-auto object-contain rounded-2xl transition-opacity duration-1000 ease-in-out ${
-                  currentBanner === index ? "opacity-100" : "opacity-0"
-                }`}
+               className={`block lg:hidden w-full max-w-sm mx-auto transition-opacity duration-1000 ease-in-out ${
+  currentBanner === index ? "opacity-100" : "opacity-0 hidden"
+}`}
               />
             ))}
 
