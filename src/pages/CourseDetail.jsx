@@ -1,11 +1,11 @@
 import { useParams, Link } from "react-router-dom";
 
-import ai from "../assets/courses/ai.png";
-import data from "../assets/courses/data.png";
-import marketing from "../assets/courses/marketing.png";
-import shopify from "../assets/courses/shopify.png";
-import content from "../assets/courses/content.png";
-import social from "../assets/courses/media.png";
+import ai from "../assets/Courses/ai.png";
+import data from "../assets/Courses/data.png";
+import marketing from "../assets/Courses/marketing.png";
+import shopify from "../assets/Courses/shopify.png";
+import content from "../assets/Courses/content.png";
+import social from "../assets/Courses/media.png";
 
 export default function CourseDetail() {
   const { slug } = useParams();
