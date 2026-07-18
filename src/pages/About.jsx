@@ -192,7 +192,7 @@ const About = () => {
         </div>
 
       </section>
-          {/* ================= OUR STORY ================= */}
+      {/* ================= OUR STORY ================= */}
 
 <section className="py-24 bg-white">
 
@@ -238,9 +238,6 @@ const About = () => {
 
     </div>
 
-  </div>
-
-</section>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
 
             <div className="group bg-[#F5F8FC] rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
@@ -504,7 +501,6 @@ const About = () => {
         </div>
 
       </section>
-   
         {/* ================= CALL TO ACTION ================= */}
 
 <section className="py-24 bg-gradient-to-r from-[#2F3D7C] via-[#4E82BE] to-[#74BDE8]">
