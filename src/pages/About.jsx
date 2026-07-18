@@ -43,7 +43,7 @@ const About = () => {
 
               </h1>
 
-              <p className="mt-8 text-lg leading-9 text-blue-100">
+              <p className="mt-8 text-base sm:text-lg leading-8 lg:leading-9 text-blue-100">
 
                 KISA Model School was established in 2019 in Malir,
                 Jaffar Tayyar with a mission to provide free quality
@@ -192,50 +192,55 @@ const About = () => {
         </div>
 
       </section>
-            {/* ================= OUR STORY ================= */}
+          {/* ================= OUR STORY ================= */}
 
-      <section className="py-24 bg-white">
+<section className="py-24 bg-white">
 
-        <div className="max-w-7xl mx-auto px-6">
+  <div className="max-w-7xl mx-auto px-6">
 
-          <div className="text-center max-w-3xl mx-auto">
+    <div className="text-center max-w-3xl mx-auto">
 
-            <span className="inline-block px-6 py-2 rounded-full bg-[#74BDE8]/20 text-[#2F3D7C] font-semibold uppercase tracking-[3px]">
+      <span className="inline-block px-6 py-2 rounded-full bg-[#74BDE8]/20 text-[#2F3D7C] font-semibold uppercase tracking-[3px]">
 
-              OUR STORY
+        OUR STORY
 
-            </span>
+      </span>
 
-            <h2 className="mt-6 text-5xl font-bold text-[#2F3D7C]">
+      <h2 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2F3D7C] leading-tight px-2">
 
-              A Journey From Free Education
-              <br />
-              To Artificial Intelligence
+        A Journey From Free Education
+        <br className="hidden sm:block" />
+        <span className="block sm:inline">
+          To Artificial Intelligence
+        </span>
 
-            </h2>
+      </h2>
 
-            <p className="mt-8 text-lg leading-9 text-gray-600">
+      <p className="mt-6 text-base sm:text-lg leading-7 lg:leading-9 text-gray-600 px-2">
 
-              KISA Model School was founded in 2019 with a mission to
-              provide free quality education to underprivileged children
-              in Malir, Jaffar Tayyar.
+        KISA Model School was founded in 2019 with a mission to
+        provide free quality education to underprivileged children
+        in Malir, Jaffar Tayyar.
 
-              <br /><br />
+        <br /><br />
 
-              In 2022, our vision expanded by introducing Artificial
-              Intelligence into the learning system, ensuring students
-              gain future-ready skills beyond traditional education.
+        In 2022, our vision expanded by introducing Artificial
+        Intelligence into the learning system, ensuring students
+        gain future-ready skills beyond traditional education.
 
-              <br /><br />
+        <br /><br />
 
-              Today, every student learns AI while external students can
-              also enroll in our specialized AI Programs to prepare for
-              freelancing, entrepreneurship, and technology careers.
+        Today, every student learns AI while external students can
+        also enroll in our specialized AI Programs to prepare for
+        freelancing, entrepreneurship, and technology careers.
 
-            </p>
+      </p>
 
-          </div>
+    </div>
 
+  </div>
+
+</section>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
 
             <div className="group bg-[#F5F8FC] rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
@@ -349,7 +354,7 @@ const About = () => {
 
               </span>
 
-              <h2 className="mt-6 text-5xl font-bold leading-tight text-[#2F3D7C]">
+             <h2 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#2F3D7C]">
 
                 Providing Quality
                 <br />
@@ -361,7 +366,7 @@ const About = () => {
 
               </h2>
 
-              <p className="mt-8 text-lg leading-9 text-gray-600">
+              <p className="mt-6 text-base sm:text-lg leading-7 lg:leading-9 text-gray-600">
 
                 Our mission is to create an educational environment where
                 students don't only study textbooks but also develop
@@ -514,7 +519,7 @@ const About = () => {
 
     <h2
       style={{ color: "#FFFFFF" }}
-      className="mt-8 text-5xl lg:text-6xl font-extrabold leading-tight"
+      className="mt-8 text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight"
     >
       Start Your Journey
       <br />
@@ -525,7 +530,7 @@ const About = () => {
 
     <p
       style={{ color: "#EAF6FF" }}
-      className="mt-8 text-lg leading-9 max-w-3xl mx-auto"
+      className="mt-6 text-base sm:text-lg leading-7 lg:leading-9 max-w-3xl mx-auto px-2"
     >
       Join KISA Model School and become part of a new generation of
       learners mastering Artificial Intelligence, technology,
