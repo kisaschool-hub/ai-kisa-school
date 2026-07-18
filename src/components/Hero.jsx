@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 export default function Hero() {
   const desktopImages = ["/hero.png", "/hero2.png"];
-const mobileImages = ["/hero1mobile.png", "/hero2mobile.png"];
+  const mobileImages = ["/hero1mobile.png", "/hero2mobile.png"];
 
   const [currentBanner, setCurrentBanner] = useState(0);
   const [search, setSearch] = useState("");
@@ -12,7 +12,9 @@ const mobileImages = ["/hero1mobile.png", "/hero2mobile.png"];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentBanner((prev) => (prev + 1) % images.length);
+      setCurrentBanner((prev) =>
+        (prev + 1) % desktopImages.length
+      );
     }, 5000);
 
     return () => clearInterval(interval);
@@ -148,14 +150,14 @@ const mobileImages = ["/hero1mobile.png", "/hero2mobile.png"];
               🎓 Admissions Open 2026-27
             </span>
 
-          <h1
-  className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight"
-  style={{ color: "#ffffff" }}
->
-  Learn AI,
-  <br />
-  Build Your Future
-</h1>
+            <h1
+              className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight"
+              style={{ color: "#ffffff" }}
+            >
+              Learn AI,
+              <br />
+              Build Your Future
+            </h1>
 
             <p className="mt-6 text-base sm:text-lg text-gray-100 max-w-xl mx-auto lg:mx-0">
               AI KISA School prepares students with Artificial Intelligence,
@@ -182,7 +184,7 @@ const mobileImages = ["/hero1mobile.png", "/hero2mobile.png"];
 
             {/* Search Box */}
 
-           <div className="mt-8 hidden md:block">
+            <div className="mt-8 hidden md:block">
 
               <div className="bg-white rounded-full p-2 flex items-center max-w-xl mx-auto lg:mx-0 shadow-xl">
 
@@ -214,25 +216,25 @@ const mobileImages = ["/hero1mobile.png", "/hero2mobile.png"];
 
           {/* Right Side */}
 
-          <div className="flex justify-center">
+          <div className="flex justify-center items-center">
 
-           <>
-  {/* Desktop Banner */}
-  <img
-    key={`desktop-${currentBanner}`}
-    src={desktopImages[currentBanner]}
-    alt="Hero Banner"
-    className="hidden lg:block w-full max-w-2xl xl:max-w-5xl rounded-3xl shadow-2xl animate-[slideIn_0.8s_ease]"
-  />
+            {/* Desktop Slider */}
 
-  {/* Mobile Banner */}
-  <img
-    key={`mobile-${currentBanner}`}
-    src={mobileImages[currentBanner]}
-    alt="Hero Mobile Banner"
-    className="block lg:hidden w-full max-w-md rounded-2xl shadow-xl animate-[slideIn_0.8s_ease]"
-  />
-</>
+            <img
+              key={`desktop-${currentBanner}`}
+              src={desktopImages[currentBanner]}
+              alt="Hero Banner"
+              className="hidden lg:block w-full max-w-2xl xl:max-w-5xl rounded-3xl shadow-2xl transition-all duration-700 hover:scale-105"
+            />
+
+            {/* Mobile Slider */}
+
+            <img
+              key={`mobile-${currentBanner}`}
+              src={mobileImages[currentBanner]}
+              alt="Hero Mobile"
+              className="block lg:hidden w-full max-w-md rounded-2xl shadow-xl transition-all duration-700"
+            />
 
           </div>
 
