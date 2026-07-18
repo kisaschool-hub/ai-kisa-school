@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-import ai from "../assets/courses/ai.png";
-import shopify from "../assets/courses/shopify.png";
-import content from "../assets/courses/content.png";
+import ai from "../assets/Courses/ai.png";
+import shopify from "../assets/Courses/shopify.png";
+import content from "../assets/Courses/content.png";
 
 const courses = [
   {
@@ -24,9 +24,10 @@ const courses = [
 
 export default function Programs() {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-6">
-        <p className="text-center uppercase tracking-[4px] text-[#74BDE8] font-semibold">
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+
+        <p className="text-center text-[#4E82BE] font-semibold uppercase tracking-widest">
           Learning Programs
         </p>
 
@@ -88,6 +89,7 @@ export default function Programs() {
             </Link>
           ))}
         </div>
+
       </div>
     </section>
   );
