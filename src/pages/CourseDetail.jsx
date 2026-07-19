@@ -211,6 +211,31 @@ export default function CourseDetail() {
     }
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://aikisaschool.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Programs",
+        "item": "https://aikisaschool.com/courses"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": course.title,
+        "item": `https://aikisaschool.com/programs/${slug}`
+      }
+    ]
+  };
+
   return (
     <>
       <SEO
@@ -223,6 +248,13 @@ export default function CourseDetail() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(courseSchema),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
         }}
       />
 
