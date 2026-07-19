@@ -2,8 +2,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 export default function Hero() {
- const desktopImages = ["/hero.webp", "/hero2.webp"];
-const mobileImages = ["/hero1mobile.webp", "/hero2mobile.webp"];
+  const desktopImages = ["/hero.webp", "/hero2.webp"];
+  const mobileImages = ["/hero1mobile.webp", "/hero2mobile.webp"];
 
   const [currentBanner, setCurrentBanner] = useState(0);
   const [search, setSearch] = useState("");
@@ -226,6 +226,7 @@ const mobileImages = ["/hero1mobile.webp", "/hero2mobile.webp"];
                 alt="AI KISA School students learning Artificial Intelligence and digital skills in Pakistan"
                 loading="eager"
                 fetchPriority="high"
+                decoding="async"
                 className={`hidden lg:block absolute w-full max-w-2xl xl:max-w-5xl rounded-3xl shadow-2xl transition-opacity duration-1000 ease-in-out ${
                   currentBanner === index ? "opacity-100" : "opacity-0"
                 }`}
@@ -240,6 +241,7 @@ const mobileImages = ["/hero1mobile.webp", "/hero2mobile.webp"];
                 alt="AI KISA School students learning Artificial Intelligence and digital skills in Pakistan"
                 loading="eager"
                 fetchPriority="high"
+                decoding="async"
                 className={`block lg:hidden w-full max-w-sm mx-auto transition-opacity duration-1000 ease-in-out ${
                   currentBanner === index ? "opacity-100" : "opacity-0 hidden"
                 }`}
