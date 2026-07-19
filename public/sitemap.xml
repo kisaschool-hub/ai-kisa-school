@@ -25,4 +25,30 @@
     <loc>https://aikisaschool.com/achievements</loc>
   </url>
 
+  <!-- Course Detail Pages -->
+
+  <url>
+    <loc>https://aikisaschool.com/programs/ai-foundations</loc>
+  </url>
+
+  <url>
+    <loc>https://aikisaschool.com/programs/data-analytics</loc>
+  </url>
+
+  <url>
+    <loc>https://aikisaschool.com/programs/digital-marketing</loc>
+  </url>
+
+  <url>
+    <loc>https://aikisaschool.com/programs/shopify-ecommerce</loc>
+  </url>
+
+  <url>
+    <loc>https://aikisaschool.com/programs/content-creation</loc>
+  </url>
+
+  <url>
+    <loc>https://aikisaschool.com/programs/social-media-management</loc>
+  </url>
+
 </urlset>
