@@ -131,7 +131,7 @@ function Admission() {
                 <option>Shopify & E-Commerce</option>
                 <option>Digital Marketing</option>
                 <option>Social Media Management</option>
-                <option>Graphic Designing</option>
+                <option>Data Analytics</option>
               </select>
 
               <button
