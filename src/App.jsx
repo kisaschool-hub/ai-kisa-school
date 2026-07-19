@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
-
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -57,6 +58,15 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/admission" element={<Admission />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route
+  path="/terms-conditions"
+  element={<TermsConditions />}
+/>
+          <Route
+  path="/terms-conditions"
+  element={<TermsConditions />}
+/>
         </Routes>
       </Suspense>
 

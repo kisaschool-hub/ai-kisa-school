@@ -31,6 +31,7 @@ function Footer() {
                 href="https://www.facebook.com/share/1YQLp5sUPx/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Facebook"
               >
                 <FaFacebookF
                   size={22}
@@ -42,6 +43,7 @@ function Footer() {
                 href="https://www.instagram.com/ai_kisa_school?igsh=ODlubmM1ZDMzMmpo"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Instagram"
               >
                 <FaInstagram
                   size={22}
@@ -91,6 +93,18 @@ function Footer() {
                 </Link>
               </li>
 
+              <li>
+                <Link to="/privacy-policy" className="hover:text-white">
+                  Privacy Policy
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/terms-conditions" className="hover:text-white">
+                  Terms & Conditions
+                </Link>
+              </li>
+
             </ul>
 
           </div>
@@ -108,7 +122,6 @@ function Footer() {
               <li>Shopify & E-Commerce</li>
               <li>Digital Marketing</li>
               <li>Social Media Management</li>
-              <li>Graphic Designing</li>
             </ul>
 
           </div>
@@ -149,11 +162,23 @@ function Footer() {
 
         <hr className="border-blue-400 my-10" />
 
-        <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-blue-100">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-blue-100">
 
           <p>
-            © 2025 AI KISA School. All Rights Reserved.
+            © 2026 AI KISA School. All Rights Reserved.
           </p>
+
+          <div className="flex gap-5">
+
+            <Link to="/privacy-policy" className="hover:text-white">
+              Privacy Policy
+            </Link>
+
+            <Link to="/terms-conditions" className="hover:text-white">
+              Terms & Conditions
+            </Link>
+
+          </div>
 
           <p>
             Design & Developed by <strong>Taqi Mehdi</strong> | 0317-7741792
