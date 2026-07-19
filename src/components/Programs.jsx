@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-import ai from "../assets/Courses/ai.png";
-import shopify from "../assets/Courses/shopify.png";
-import content from "../assets/Courses/content.png";
+import ai from "../assets/Courses/ai-foundations-course.png";
+import content from "../assets/Courses/content-creation-course.png";
+import shopify from "../assets/Courses/shopify-ecommerce-course.png";
 
 const courses = [
   {
@@ -24,7 +24,7 @@ const courses = [
 
 export default function Programs() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-20 bg-[#F8FBFF]">
       <div className="max-w-7xl mx-auto px-6">
 
         <p className="text-center text-[#4E82BE] font-semibold uppercase tracking-widest">
@@ -54,6 +54,7 @@ export default function Programs() {
                 <img
                   src={course.image}
                   alt={course.title}
+                  loading="lazy"
                   className="w-full h-56 object-cover object-top group-hover:scale-105 transition-all duration-700"
                 />
               </div>
