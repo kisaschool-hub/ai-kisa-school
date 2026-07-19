@@ -47,6 +47,19 @@ export default function Navbar() {
           </NavLink>
 
           <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              `${navLink} ${
+                isActive
+                  ? "bg-[#2F3D7C] text-white shadow-md"
+                  : "text-[#2F3D7C] hover:bg-[#DDECF9]"
+              }`
+            }
+          >
+            About
+          </NavLink>
+
+          <NavLink
             to="/courses"
             className={({ isActive }) =>
               `${navLink} ${
@@ -70,19 +83,6 @@ export default function Navbar() {
             }
           >
             Achievements
-          </NavLink>
-
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `${navLink} ${
-                isActive
-                  ? "bg-[#2F3D7C] text-white shadow-md"
-                  : "text-[#2F3D7C] hover:bg-[#DDECF9]"
-              }`
-            }
-          >
-            About
           </NavLink>
 
           <NavLink
