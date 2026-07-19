@@ -1,8 +1,11 @@
+import { lazy, Suspense } from "react";
+
 import SEO from "../components/SEO";
 import Hero from "../components/Hero";
-import Stats from "../components/Stats";
-import Programs from "../components/Programs";
-import Reviews from "../components/Reviews";
+
+const Stats = lazy(() => import("../components/Stats"));
+const Programs = lazy(() => import("../components/Programs"));
+const Reviews = lazy(() => import("../components/Reviews"));
 
 export default function Home() {
   return (
@@ -72,17 +75,19 @@ export default function Home() {
             ],
             "sameAs": [
               "https://www.facebook.com/ai.kisa.school",
-              "https://www.instagram.com/ai_kisa_school/",
-            
+              "https://www.instagram.com/ai_kisa_school/"
             ]
           })
         }}
       />
 
       <Hero />
-      <Stats />
-      <Programs />
-      <Reviews />
+
+      <Suspense fallback={null}>
+        <Stats />
+        <Programs />
+        <Reviews />
+      </Suspense>
     </>
   );
 }
