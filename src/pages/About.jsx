@@ -13,11 +13,11 @@ const About = () => {
   return (
     <>
       <SEO
-        title="About KISA Model School | AI Education Pakistan"
-        description="Learn about KISA Model School's journey, mission, vision and commitment to AI-powered education in Pakistan."
-        url="https://aikisaschool.com/about"
-        image="https://aikisaschool.com/hero.png"
-      />
+  title="About AI KISA School | AI School in Karachi, Pakistan"
+  description="Learn about AI KISA School Karachi, our mission, vision and future-ready education focused on Artificial Intelligence, Coding, Robotics and Digital Skills."
+  url="https://aikisaschool.com/about"
+  image="https://aikisaschool.com/hero.png"
+/>
     <main className="bg-gradient-to-b from-white via-[#EEF6FF] to-[#F5F8FC] text-[#1F2937]">
 
       {/* ================= HERO ================= */}
@@ -36,14 +36,14 @@ const About = () => {
             <div>
 
             <span className="inline-block px-6 py-2 rounded-full bg-white/15 backdrop-blur-md text-white font-semibold uppercase tracking-[3px] border border-white/20">
-                About KISA Model School
+                About AI KISA School
 
               </span>
 
             <h1 className="mt-8 text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight !text-white">
-                Building Future
+                Building Pakistan's
                 <br />
-                AI Leaders
+                Future AI Leaders
                 <br />
                 Through Modern
                 <br />
@@ -517,8 +517,7 @@ const About = () => {
 
     <span className="inline-block px-6 py-2 rounded-full bg-white/15 border border-white/20 backdrop-blur-md text-white font-semibold uppercase tracking-[3px]">
 
-      JOIN KISA MODEL SCHOOL
-
+      JOIN AI KISA SCHOOL
     </span>
 
     <h2
