@@ -223,10 +223,12 @@ export default function Hero() {
               <img
                 key={index}
                 src={image}
-                alt="Hero Banner"
-               className={`hidden lg:block absolute w-full max-w-2xl xl:max-w-5xl rounded-3xl shadow-2xl transition-opacity duration-1000 ease-in-out ${
-  currentBanner === index ? "opacity-100" : "opacity-0"
-}`}
+                alt="AI KISA School students learning Artificial Intelligence and digital skills in Pakistan"
+                loading="eager"
+                fetchPriority="high"
+                className={`hidden lg:block absolute w-full max-w-2xl xl:max-w-5xl rounded-3xl shadow-2xl transition-opacity duration-1000 ease-in-out ${
+                  currentBanner === index ? "opacity-100" : "opacity-0"
+                }`}
               />
             ))}
 
@@ -235,10 +237,12 @@ export default function Hero() {
               <img
                 key={index}
                 src={image}
-                alt="Hero Mobile"
-               className={`block lg:hidden w-full max-w-sm mx-auto transition-opacity duration-1000 ease-in-out ${
-  currentBanner === index ? "opacity-100" : "opacity-0 hidden"
-}`}
+                alt="AI KISA School students learning Artificial Intelligence and digital skills in Pakistan"
+                loading="eager"
+                fetchPriority="high"
+                className={`block lg:hidden w-full max-w-sm mx-auto transition-opacity duration-1000 ease-in-out ${
+                  currentBanner === index ? "opacity-100" : "opacity-0 hidden"
+                }`}
               />
             ))}
 
