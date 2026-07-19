@@ -57,21 +57,22 @@ export default function Courses() {
   return (
     <>
       <SEO
-        title="AI Courses | KISA Model School"
-        description="Explore AI Foundations, Data Analytics, Digital Marketing, Shopify, Content Creation and Social Media Management courses at KISA Model School."
+        title="AI Courses in Pakistan | Coding, Robotics & Digital Skills | AI KISA School"
+        description="Explore AI, Coding, Robotics, Data Analytics, Digital Marketing, Shopify and Digital Skills courses at AI KISA School. Learn online from anywhere in Pakistan."
         url="https://aikisaschool.com/courses"
-        image="https://aikisaschool.com/hero.png"
       />
 
       <section className="py-20 bg-[#F8FBFF]">
         <div className="max-w-7xl mx-auto px-6">
 
           <h1 className="text-4xl lg:text-5xl font-bold text-center text-[#2F3D7C]">
-            Our Programs
+            AI Courses in Pakistan
           </h1>
 
           <p className="text-center text-gray-600 mt-3 mb-10">
-            Choose the course that matches your future goals.
+            Learn Artificial Intelligence, Coding, Robotics, Data Analytics,
+            Shopify, Digital Marketing and other future-ready digital skills
+            from AI KISA School. Our programs are available for students across Pakistan.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -87,7 +88,7 @@ export default function Courses() {
 
                   <img
                     src={course.image}
-                    alt={course.title}
+                    alt={`${course.title} course at AI KISA School Pakistan`}
                     className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
 
@@ -111,7 +112,7 @@ export default function Courses() {
                     to={`/programs/${course.slug}`}
                     className="block mt-6 text-center bg-[#2F3D7C] text-white py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-sky-500 hover:scale-105 hover:shadow-xl active:scale-95"
                   >
-                    See Details →
+                    View Course Details →
                   </Link>
 
                 </div>
@@ -119,6 +120,22 @@ export default function Courses() {
               </div>
 
             ))}
+
+          </div>
+
+          <div className="mt-16 max-w-4xl mx-auto text-center">
+
+            <h2 className="text-3xl font-bold text-[#2F3D7C]">
+              Why Choose AI KISA School Courses?
+            </h2>
+
+            <p className="mt-6 text-gray-700 leading-8">
+              AI KISA School provides practical, project-based training in
+              Artificial Intelligence, Coding, Robotics, Data Analytics,
+              Shopify, Digital Marketing and Digital Skills. Our courses are
+              designed to prepare students for future careers and can be
+              attended by learners from anywhere in Pakistan.
+            </p>
 
           </div>
 
