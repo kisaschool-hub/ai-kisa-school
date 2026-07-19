@@ -156,103 +156,105 @@ export default function CourseDetail() {
 
   if (!course) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <h1 className="text-4xl font-bold">Course Not Found</h1>
+      <div className="text-center py-20 text-2xl font-bold">
+        Course Not Found
       </div>
     );
   }
 
   return (
-    <section className="bg-gray-100 py-10">
-      <div className="max-w-6xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
+    <>
+      <section className="py-20 bg-[#F8FBFF]">
+        <div className="max-w-6xl mx-auto px-6">
 
-        <img
-          src={course.image}
-          alt={course.title}
-        className="w-full aspect-[16/9] object-contain bg-white"
-        />
+          <img
+            src={course.image}
+            alt={course.title}
+            className="w-full aspect-[16/9] object-contain bg-white"
+          />
 
-        <div className="p-8">
+          <div className="p-8">
 
-          <h1 className="text-3xl md:text-4xl font-bold text-[#2F3D7C]">
-            {course.title}
-          </h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-[#2F3D7C]">
+              {course.title}
+            </h1>
 
-          <p className="mt-4 text-base md:text-lg text-gray-700 leading-8">
-            {course.overview}
-          </p>
+            <p className="mt-4 text-base md:text-lg text-gray-700 leading-8">
+              {course.overview}
+            </p>
 
-          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
 
-            <div className="bg-blue-50 rounded-xl p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <h2 className="font-bold text-xl text-[#2F3D7C]">
-                Course Details
-              </h2>
+              <div className="bg-blue-50 rounded-xl p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <h2 className="font-bold text-xl text-[#2F3D7C]">
+                  Course Details
+                </h2>
 
-              <p className="mt-4">
-                <strong>Duration:</strong> {course.duration}
-              </p>
+                <p className="mt-4">
+                  <strong>Duration:</strong> {course.duration}
+                </p>
 
-              <p className="mt-2">
-                <strong>Weekly Classes:</strong> {course.weekly}
-              </p>
+                <p className="mt-2">
+                  <strong>Weekly Classes:</strong> {course.weekly}
+                </p>
+              </div>
+
+              <div className="bg-blue-50 rounded-xl p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <h2 className="font-bold text-xl text-[#2F3D7C]">
+                  Market Scope
+                </h2>
+
+                <ul className="list-disc pl-5 mt-4 space-y-2">
+                  {course.scope.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+
+              </div>
+
             </div>
 
-            <div className="bg-blue-50 rounded-xl p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <h2 className="font-bold text-xl text-[#2F3D7C]">
-                Market Scope
+            <div className="mt-10">
+
+              <h2 className="text-2xl font-bold text-[#2F3D7C] mb-4">
+                What You'll Learn
               </h2>
 
-              <ul className="list-disc pl-5 mt-4 space-y-2">
-                {course.scope.map((item, index) => (
-                  <li key={index}>{item}</li>
+              <ul className="grid md:grid-cols-2 gap-3">
+                {course.learn.map((item, index) => (
+                  <li
+                    key={index}
+                    className="bg-gray-100 rounded-lg p-3 cursor-pointer transition-all duration-300 hover:bg-[#2F3D7C] hover:text-white hover:scale-105 hover:shadow-xl"
+                  >
+                    ✔ {item}
+                  </li>
                 ))}
               </ul>
 
             </div>
 
-          </div>
+            <div className="mt-10 flex flex-wrap gap-4">
 
-          <div className="mt-10">
+              <Link
+                to="/admission"
+                className="bg-[#2F3D7C] text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-sky-500 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl active:scale-95"
+              >
+                Apply for Admission
+              </Link>
 
-            <h2 className="text-2xl font-bold text-[#2F3D7C] mb-4">
-              What You'll Learn
-            </h2>
+              <Link
+                to="/courses"
+                className="border-2 border-[#2F3D7C] text-[#2F3D7C] px-8 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-[#2F3D7C] hover:text-white hover:-translate-y-1 hover:scale-105 hover:shadow-2xl active:scale-95"
+              >
+                Back to Programs
+              </Link>
 
-            <ul className="grid md:grid-cols-2 gap-3">
-              {course.learn.map((item, index) => (
-                <li
-                  key={index}
-                  className="bg-gray-100 rounded-lg p-3 cursor-pointer transition-all duration-300 hover:bg-[#2F3D7C] hover:text-white hover:scale-105 hover:shadow-xl"
-                >
-                  ✔ {item}
-                </li>
-              ))}
-            </ul>
-
-          </div>
-
-          <div className="mt-10 flex flex-wrap gap-4">
-
-            <Link
-              to="/admission"
-              className="bg-[#2F3D7C] text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-sky-500 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl active:scale-95"
-            >
-              Apply for Admission
-            </Link>
-
-            <Link
-              to="/courses"
-              className="border-2 border-[#2F3D7C] text-[#2F3D7C] px-8 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-[#2F3D7C] hover:text-white hover:-translate-y-1 hover:scale-105 hover:shadow-2xl active:scale-95"
-            >
-              Back to Programs
-            </Link>
+            </div>
 
           </div>
 
         </div>
-
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
