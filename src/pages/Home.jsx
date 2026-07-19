@@ -36,6 +36,49 @@ export default function Home() {
         }}
       />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "AI KISA School",
+            "url": "https://aikisaschool.com",
+            "image": "https://aikisaschool.com/logo.png",
+            "telephone": "+92331 3600353",
+            "email": "Contact@aikisaschool.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "B12 Survey 492 jaffar tayyar",
+              "addressLocality": "Karachi",
+              "addressRegion": "Sindh",
+              "postalCode": "75050",
+              "addressCountry": "PK"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+              }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/ai.kisa.school",
+              "https://www.instagram.com/ai_kisa_school/",
+            
+            ]
+          })
+        }}
+      />
+
       <Hero />
       <Stats />
       <Programs />
