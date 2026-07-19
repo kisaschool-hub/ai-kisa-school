@@ -1,13 +1,12 @@
 import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
 
-import ai from "../assets/Courses/ai.png";
-import data from "../assets/Courses/data.png";
-import marketing from "../assets/Courses/marketing.png";
-import shopify from "../assets/Courses/shopify.png";
-import content from "../assets/Courses/content.png";
-import social from "../assets/Courses/media.png";
-
+import ai from "../assets/Courses/ai-foundations-course.png";
+import data from "../assets/Courses/data-analytics-course.png";
+import marketing from "../assets/Courses/digital-marketing-course.png";
+import shopify from "../assets/Courses/shopify-ecommerce-course.png";
+import content from "../assets/Courses/content-creation-course.png";
+import social from "../assets/Courses/social-media-management-course.png";
 export default function Courses() {
   const courses = [
     {
