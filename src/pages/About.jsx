@@ -13,8 +13,8 @@ const About = () => {
   return (
     <>
       <SEO
-  title="About AI KISA School | AI School in Karachi, Pakistan"
-  description="Learn about AI KISA School Karachi, our mission, vision and future-ready education focused on Artificial Intelligence, Coding, Robotics and Digital Skills."
+ title="About AI KISA School Pakistan | AI & Digital Skills School"
+ description="Learn about AI KISA School, Pakistan's future-ready AI and Digital Skills school with a physical campus located in Karachi."
   url="https://aikisaschool.com/about"
   image="https://aikisaschool.com/hero.png"
 />

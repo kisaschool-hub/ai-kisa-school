@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="AI KISA School Karachi | AI School & Digital Skills School in Pakistan"
-        description="AI KISA School Karachi provides Artificial Intelligence, Coding, Robotics and Digital Skills education for students across Pakistan. Admissions are now open."
+        title="AI KISA School Pakistan | AI School & Digital Skills School"
+       description="AI KISA School provides Artificial Intelligence, Coding, Robotics and Digital Skills education for students across Pakistan through online and campus-based learning."
         url="https://aikisaschool.com/"
       />
 
