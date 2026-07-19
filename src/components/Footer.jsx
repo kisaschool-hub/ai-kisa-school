@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
-import logo from "../assets/logo1.png";
+import logo from "../assets/logo1.webp";
 
 function Footer() {
   return (

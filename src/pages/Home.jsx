@@ -26,7 +26,7 @@ export default function Home() {
                 "@type": "Organization",
                 "name": "AI KISA School",
                 "url": "https://aikisaschool.com",
-                "logo": "https://aikisaschool.com/logo.png"
+                "logo": "https://aikisaschool.com/logo.webp"
               },
               {
                 "@type": "EducationalOrganization",
@@ -47,7 +47,7 @@ export default function Home() {
             "@type": "LocalBusiness",
             "name": "AI KISA School",
             "url": "https://aikisaschool.com",
-            "image": "https://aikisaschool.com/logo.png",
+            "image": "https://aikisaschool.com/logo.webp",
             "telephone": "+92331 3600353",
             "email": "Contact@aikisaschool.com",
             "address": {
