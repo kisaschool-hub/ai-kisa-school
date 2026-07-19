@@ -17,7 +17,7 @@ export default function CourseDetail() {
       duration: "3 Months",
       weekly: "3 Classes / Week",
       overview:
-"AI Foundations is a beginner-friendly course designed for students, professionals and freelancers across Pakistan who want to understand modern Artificial Intelligence. During this program, you will learn ChatGPT, Google Gemini, Prompt Engineering, AI productivity tools, AI image generation and practical AI applications used in education and business. The course focuses on hands-on learning so you can confidently use AI tools in real-world projects, improve productivity and prepare for future career opportunities.",
+        "AI Foundations is a beginner-friendly course designed for students, professionals and freelancers across Pakistan who want to understand modern Artificial Intelligence. During this program, you will learn ChatGPT, Google Gemini, Prompt Engineering, AI productivity tools, AI image generation and practical AI applications used in education and business. The course focuses on hands-on learning so you can confidently use AI tools in real-world projects, improve productivity and prepare for future career opportunities.",
       learn: [
         "Introduction to AI",
         "ChatGPT",
@@ -154,66 +154,84 @@ export default function CourseDetail() {
 
   const course = courses[slug];
   const seoData = {
-  "ai-foundations": {
-    title: "AI Foundations Course | AI KISA School Pakistan",
-    description:
-      "Learn AI Foundations including ChatGPT, Prompt Engineering, Google Gemini and modern AI tools at AI KISA School.",
-  },
+    "ai-foundations": {
+      title: "AI Foundations Course | AI KISA School Pakistan",
+      description:
+        "Learn AI Foundations including ChatGPT, Prompt Engineering, Google Gemini and modern AI tools at AI KISA School.",
+    },
 
-  "data-analytics": {
-    title: "Data Analytics Course | AI KISA School Pakistan",
-    description:
-      "Master Excel, SQL, Power BI, Dashboards and Business Analytics with practical projects.",
-  },
+    "data-analytics": {
+      title: "Data Analytics Course | AI KISA School Pakistan",
+      description:
+        "Master Excel, SQL, Power BI, Dashboards and Business Analytics with practical projects.",
+    },
 
-  "digital-marketing": {
-    title: "Digital Marketing Course | AI KISA School Pakistan",
-    description:
-      "Learn SEO, Google Ads, Facebook Ads, Instagram Marketing and Lead Generation.",
-  },
+    "digital-marketing": {
+      title: "Digital Marketing Course | AI KISA School Pakistan",
+      description:
+        "Learn SEO, Google Ads, Facebook Ads, Instagram Marketing and Lead Generation.",
+    },
 
-  "shopify-ecommerce": {
-    title: "Shopify & E-Commerce Course | AI KISA School Pakistan",
-    description:
-      "Learn Shopify Store Development, Dropshipping and E-Commerce Business.",
-  },
+    "shopify-ecommerce": {
+      title: "Shopify & E-Commerce Course | AI KISA School Pakistan",
+      description:
+        "Learn Shopify Store Development, Dropshipping and E-Commerce Business.",
+    },
 
-  "content-creation": {
-    title: "Content Creation Course | AI KISA School Pakistan",
-    description:
-      "Learn Canva, AI Content Writing, Copywriting and Personal Branding.",
-  },
+    "content-creation": {
+      title: "Content Creation Course | AI KISA School Pakistan",
+      description:
+        "Learn Canva, AI Content Writing, Copywriting and Personal Branding.",
+    },
 
-  "social-media-management": {
-    title: "Social Media Management Course | AI KISA School Pakistan",
-    description:
-      "Become a Social Media Manager with Facebook, Instagram, LinkedIn and Analytics.",
-  },
-};
+    "social-media-management": {
+      title: "Social Media Management Course | AI KISA School Pakistan",
+      description:
+        "Become a Social Media Manager with Facebook, Instagram, LinkedIn and Analytics.",
+    },
+  };
 
   if (!course) {
     return (
-      
       <div className="text-center py-20 text-2xl font-bold">
         Course Not Found
       </div>
     );
   }
 
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: course.title,
+    description: course.overview,
+    provider: {
+      "@type": "EducationalOrganization",
+      name: "AI KISA School",
+      sameAs: "https://aikisaschool.com"
+    }
+  };
+
   return (
-    
     <>
-  <SEO
-    title={seoData[slug]?.title || course.title}
-    description={seoData[slug]?.description || course.overview}
-    url={`https://aikisaschool.com/programs/${slug}`}
-  />
+      <SEO
+        title={seoData[slug]?.title || course.title}
+        description={seoData[slug]?.description || course.overview}
+        url={`https://aikisaschool.com/programs/${slug}`}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(courseSchema),
+        }}
+      />
+
       <section className="py-20 bg-[#F8FBFF]">
         <div className="max-w-6xl mx-auto px-6">
 
           <img
             src={course.image}
-           alt={`${course.title} Course - AI KISA School Pakistan`}
+            alt={`${course.title} Course - AI KISA School Pakistan`}
             className="w-full aspect-[16/9] object-contain bg-white"
           />
 

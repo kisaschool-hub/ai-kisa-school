@@ -9,8 +9,31 @@ export default function Home() {
     <>
       <SEO
         title="AI KISA School Pakistan | AI School & Digital Skills School"
-       description="AI KISA School provides Artificial Intelligence, Coding, Robotics and Digital Skills education for students across Pakistan through online and campus-based learning."
+        description="AI KISA School provides Artificial Intelligence, Coding, Robotics and Digital Skills education for students across Pakistan through online and campus-based learning."
         url="https://aikisaschool.com/"
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "name": "AI KISA School",
+                "url": "https://aikisaschool.com",
+                "logo": "https://aikisaschool.com/logo.png"
+              },
+              {
+                "@type": "EducationalOrganization",
+                "name": "AI KISA School",
+                "url": "https://aikisaschool.com",
+                "description": "AI, Data Analytics, Digital Marketing and E-Commerce training institute in Pakistan."
+              }
+            ]
+          })
+        }}
       />
 
       <Hero />
