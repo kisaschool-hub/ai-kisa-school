@@ -222,14 +222,20 @@ export default function Hero() {
             {desktopImages.map((image, index) => (
               <img
                 key={index}
-                src={image}
+                src={index === 0 ? "/hero_1200x800.webp" : "/hero2_1200x800.webp"}
+                srcSet={
+                  index === 0
+                    ? "/hero_480x320.webp 480w, /hero_768x512.webp 768w, /hero_1200x800.webp 1200w"
+                    : "/hero2_480x320.webp 480w, /hero2_768x512.webp 768w, /hero2_1200x800.webp 1200w"
+                }
+                sizes="(max-width:1024px) 100vw, 50vw"
                 alt="AI KISA School students learning Artificial Intelligence and digital skills in Pakistan"
+                width="1200"
+                height="800"
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
-                width="1200"
-                height="800"
-                className={`hidden lg:block absolute w-full max-w-2xl xl:max-w-5xl h-auto rounded-3xl shadow-2xl transition-opacity duration-1000 ease-in-out ${
+                className={`hidden lg:block absolute w-full max-w-2xl xl:max-w-5xl rounded-3xl shadow-2xl transition-opacity duration-1000 ease-in-out ${
                   currentBanner === index ? "opacity-100" : "opacity-0"
                 }`}
               />
@@ -239,14 +245,24 @@ export default function Hero() {
             {mobileImages.map((image, index) => (
               <img
                 key={index}
-                src={image}
+                src={
+                  index === 0
+                    ? "/hero1mobile_600x1067.webp"
+                    : "/hero2mobile_600x1067.webp"
+                }
+                srcSet={
+                  index === 0
+                    ? "/hero1mobile_360x640.webp 360w, /hero1mobile_600x1067.webp 600w"
+                    : "/hero2mobile_360x640.webp 360w, /hero2mobile_600x1067.webp 600w"
+                }
+                sizes="100vw"
                 alt="AI KISA School students learning Artificial Intelligence and digital skills in Pakistan"
+                width="600"
+                height="1067"
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
-                width="600"
-                height="900"
-                className={`block lg:hidden w-full max-w-sm h-auto mx-auto transition-opacity duration-1000 ease-in-out ${
+                className={`block lg:hidden w-full max-w-sm mx-auto transition-opacity duration-1000 ease-in-out ${
                   currentBanner === index ? "opacity-100" : "opacity-0 hidden"
                 }`}
               />
