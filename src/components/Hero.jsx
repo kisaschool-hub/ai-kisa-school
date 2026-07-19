@@ -227,7 +227,9 @@ export default function Hero() {
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
-                className={`hidden lg:block absolute w-full max-w-2xl xl:max-w-5xl rounded-3xl shadow-2xl transition-opacity duration-1000 ease-in-out ${
+                width="1200"
+                height="800"
+                className={`hidden lg:block absolute w-full max-w-2xl xl:max-w-5xl h-auto rounded-3xl shadow-2xl transition-opacity duration-1000 ease-in-out ${
                   currentBanner === index ? "opacity-100" : "opacity-0"
                 }`}
               />
@@ -242,7 +244,9 @@ export default function Hero() {
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
-                className={`block lg:hidden w-full max-w-sm mx-auto transition-opacity duration-1000 ease-in-out ${
+                width="600"
+                height="900"
+                className={`block lg:hidden w-full max-w-sm h-auto mx-auto transition-opacity duration-1000 ease-in-out ${
                   currentBanner === index ? "opacity-100" : "opacity-0 hidden"
                 }`}
               />
