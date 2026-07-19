@@ -53,7 +53,7 @@ const About = () => {
 
               <p className="mt-8 text-base sm:text-lg leading-8 lg:leading-9 text-blue-100">
 
-                KISA Model School was established in 2019 in Malir,
+               KISA Model School, now operating as the AI KISA School brand, was established in 2019... in Malir,
                 Jaffar Tayyar with a mission to provide free quality
                 education to underprivileged children.
 
