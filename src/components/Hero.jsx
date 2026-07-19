@@ -2,8 +2,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 export default function Hero() {
-  const desktopImages = ["/hero.png", "/hero2.png"];
-  const mobileImages = ["/hero1mobile.png", "/hero2mobile.png"];
+ const desktopImages = ["/hero.webp", "/hero2.webp"];
+const mobileImages = ["/hero1mobile.webp", "/hero2mobile.webp"];
 
   const [currentBanner, setCurrentBanner] = useState(0);
   const [search, setSearch] = useState("");
