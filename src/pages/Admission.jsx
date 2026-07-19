@@ -30,22 +30,26 @@ function Admission() {
   return (
     <>
       <SEO
-        title="Admissions | KISA Model School"
-        description="Apply for admission at KISA Model School and start your journey in Artificial Intelligence, Digital Skills and modern education."
+        title="School Admissions Pakistan | AI KISA School"
+        description="Apply for admission at AI KISA School. Join Pakistan's future-ready AI and Digital Skills school with online and campus-based learning."
         url="https://aikisaschool.com/admission"
-        image="https://aikisaschool.com/hero.png"
       />
 
       {/* Hero */}
       <section className="pt-32 pb-16 bg-[#F5F8FC]">
         <div className="max-w-7xl mx-auto px-6 text-center">
+
           <h1 className="text-5xl font-extrabold text-[#2F3D7C]">
-            Admission Form
+            Admissions Open Across Pakistan
           </h1>
 
-          <p className="mt-4 text-gray-600">
-            Fill out the form below to apply for admission.
+          <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+            Apply now to join AI KISA School and start learning Artificial
+            Intelligence, Coding, Robotics, Digital Marketing, Data Analytics,
+            Shopify and future-ready Digital Skills. Students from all over
+            Pakistan are welcome.
           </p>
+
         </div>
       </section>
 
