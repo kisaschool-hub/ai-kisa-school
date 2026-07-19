@@ -115,6 +115,13 @@ export default function Courses() {
                     View Course Details →
                   </Link>
 
+                  <Link
+                    to="/admission"
+                    className="block mt-3 text-center border-2 border-[#2F3D7C] text-[#2F3D7C] py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-[#2F3D7C] hover:text-white hover:scale-105 hover:shadow-xl active:scale-95"
+                  >
+                    Apply Now
+                  </Link>
+
                 </div>
 
               </div>

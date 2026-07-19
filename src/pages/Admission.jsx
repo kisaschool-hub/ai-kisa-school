@@ -1,5 +1,6 @@
 import SEO from "../components/SEO";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Admission() {
   const [submitted, setSubmitted] = useState(false);
@@ -142,6 +143,24 @@ function Admission() {
               </button>
 
             </form>
+
+            <div className="mt-6 flex flex-wrap justify-center gap-4 text-center">
+
+              <Link
+                to="/courses"
+                className="text-[#2F3D7C] font-semibold underline"
+              >
+                View All Courses
+              </Link>
+
+              <Link
+                to="/contact"
+                className="text-[#2F3D7C] font-semibold underline"
+              >
+                Need Help?
+              </Link>
+
+            </div>
 
           </div>
 

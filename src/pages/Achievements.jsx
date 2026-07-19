@@ -118,6 +118,24 @@ export default function Achievements() {
 
         </div>
 
+        <div className="mt-16 flex flex-wrap justify-center gap-4">
+
+          <Link
+            to="/courses"
+            className="border-2 border-[#2F3D7C] text-[#2F3D7C] px-8 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-[#2F3D7C] hover:text-white hover:-translate-y-1 hover:scale-105 hover:shadow-2xl active:scale-95"
+          >
+            Explore Our Programs
+          </Link>
+
+          <Link
+            to="/admission"
+            className="bg-[#2F3D7C] text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-sky-500 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl active:scale-95"
+          >
+            Start Learning Today
+          </Link>
+
+        </div>
+
       </div>
     </section>
   );

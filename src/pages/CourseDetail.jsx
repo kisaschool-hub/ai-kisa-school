@@ -325,6 +325,16 @@ export default function CourseDetail() {
                 ))}
               </ul>
 
+              <p className="mt-8 text-gray-600">
+                Looking for all available training programs?
+                <Link
+                  to="/courses"
+                  className="text-[#2F3D7C] font-semibold ml-1 underline"
+                >
+                  Browse All Courses
+                </Link>
+              </p>
+
             </div>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -344,6 +354,16 @@ export default function CourseDetail() {
               </Link>
 
             </div>
+
+            <p className="mt-6 text-gray-600">
+              Need more information?
+              <Link
+                to="/contact"
+                className="text-[#2F3D7C] font-semibold ml-1 underline"
+              >
+                Contact Us
+              </Link>
+            </p>
 
           </div>
 
