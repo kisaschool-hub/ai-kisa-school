@@ -18,7 +18,7 @@ export default function PageHero({
   const hasSideImage = Boolean(rightImage);
 
   return (
-    <section className="relative isolate min-h-[360px] overflow-hidden bg-transparent text-ink-foreground sm:min-h-[420px] md:min-h-[500px] lg:min-h-[560px]">
+    <section className="relative isolate min-h-[680px] overflow-hidden bg-transparent text-ink-foreground sm:min-h-[420px] md:min-h-[500px] lg:min-h-[560px]">
       {bg ? (
         <picture className="absolute inset-0 h-full w-full">
           {mobileBackgroundImage ? (

@@ -39,7 +39,7 @@ export default function AchievementDetail() {
           <img
             src={sliderImages[currentImage]}
             alt="AI PRENEUR'26"
-            className="h-[260px] w-full object-cover sm:h-[360px] md:h-[440px] lg:h-[540px]"
+            className="h-[320px] w-full object-cover object-center sm:h-[360px] md:h-[440px] lg:h-[540px]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#1B2A5C]/90 via-[#1B2A5C]/70 to-[#1B2A5C]/30" />
 

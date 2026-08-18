@@ -61,33 +61,38 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`fixed inset-0 bg-black/35 transition-opacity duration-300 lg:hidden ${
+        className={`fixed inset-0 bg-black/40 transition-opacity duration-300 lg:hidden ${
           menuOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}
         onClick={closeMenu}
       />
 
       <div
-        className={`fixed right-0 top-0 h-full w-[85%] max-w-sm border-l border-[#dfe6f0] bg-[#F7F8FB]/95 shadow-[0_20px_45px_rgba(27,42,92,0.18)] backdrop-blur-xl transition-transform duration-300 lg:hidden ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed inset-y-0 right-0 z-[70] flex h-screen w-[85%] max-w-sm flex-col overflow-y-auto bg-[#1B2A5C] shadow-[0_18px_38px_rgba(15,23,42,0.35)] transition-transform duration-300 ease-out lg:hidden ${
+          menuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
+        } ${menuOpen ? "pointer-events-auto" : "pointer-events-none"}`}
+        style={{ backgroundColor: "#1B2A5C", minHeight: "100vh", height: "100vh" }}
       >
-        <div className="flex items-center justify-between border-b border-slate-200 p-5">
-          <h2 className="text-xl font-extrabold text-[#1B2A5C]">Menu</h2>
-          <button onClick={closeMenu} className="text-3xl text-[#1B2A5C]" aria-label="Close menu">
+        <div className="flex min-h-[72px] w-full items-center justify-between border-b border-white/10 bg-[#1B2A5C] px-5 py-4">
+          <h2 className="text-xl font-extrabold tracking-[-0.02em] text-white">Menu</h2>
+          <button
+            onClick={closeMenu}
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full text-2xl leading-none text-white transition-colors hover:bg-white/10 active:bg-white/15"
+            aria-label="Close menu"
+          >
             ✕
           </button>
         </div>
 
-        <div className="flex flex-col gap-2 p-5">
+        <div className="flex w-full flex-1 flex-col divide-y divide-white/15 bg-[#1B2A5C] px-4 pb-8 pt-3">
           {desktopLinks.map((item) => (
             <NavLink
               key={item.to}
               to={item.to}
               onClick={closeMenu}
               className={({ isActive }) =>
-                `rounded-2xl px-4 py-3 font-semibold ${
-                  isActive ? "bg-[#1B2A5C] text-white" : "text-[#1B2A5C] hover:bg-[#EAF1FF]"
+                `w-full rounded-xl px-4 py-3.5 text-left text-base font-semibold text-white transition-all duration-200 ${
+                  isActive ? "bg-white/10" : "hover:bg-white/10 active:bg-white/15"
                 }`
               }
             >
@@ -95,13 +100,15 @@ export default function Navbar() {
             </NavLink>
           ))}
 
-          <NavLink
-            to="/admission"
-            onClick={closeMenu}
-            className="mt-3 rounded-2xl bg-[#DFB863] px-4 py-3 text-center font-semibold text-[#1B2A5C]"
-          >
-            Apply free
-          </NavLink>
+          <div className="pt-4">
+            <NavLink
+              to="/admission"
+              onClick={closeMenu}
+              className="mt-3 block w-full rounded-2xl bg-[#DFB863] px-4 py-3.5 text-center text-base font-semibold text-[#1B2A5C] shadow-[0_10px_20px_rgba(223,184,99,0.22)] transition-transform duration-200 hover:translate-y-[-1px] active:translate-y-0"
+            >
+              Apply free
+            </NavLink>
+          </div>
         </div>
       </div>
     </header>
