@@ -64,7 +64,7 @@ export default function Courses() {
       <section className="py-20 bg-[#F8FBFF]">
         <div className="max-w-7xl mx-auto px-6">
 
-          <h1 className="text-4xl lg:text-5xl font-bold text-center text-[#2F3D7C]">
+          <h1 className="text-4xl lg:text-5xl font-bold text-center text-[#1B2A5C]">
             AI Courses in Pakistan
           </h1>
 
@@ -95,7 +95,7 @@ export default function Courses() {
 
                 <div className="p-6">
 
-                  <h2 className="text-2xl font-bold text-[#2F3D7C]">
+                  <h2 className="text-2xl font-bold text-[#1B2A5C]">
                     {course.title}
                   </h2>
 
@@ -109,14 +109,14 @@ export default function Courses() {
 
                   <Link
                     to={`/programs/${course.slug}`}
-                    className="block mt-6 text-center bg-[#2F3D7C] text-white py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-sky-500 hover:scale-105 hover:shadow-xl active:scale-95"
+                    className="block mt-6 text-center bg-[#1B2A5C] text-white py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-sky-500 hover:scale-105 hover:shadow-xl active:scale-95"
                   >
                     View Course Details →
                   </Link>
 
                   <Link
                     to="/admission"
-                    className="block mt-3 text-center border-2 border-[#2F3D7C] text-[#2F3D7C] py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-[#2F3D7C] hover:text-white hover:scale-105 hover:shadow-xl active:scale-95"
+                    className="block mt-3 text-center border-2 border-[#1B2A5C] text-[#1B2A5C] py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-[#1B2A5C] hover:text-white hover:scale-105 hover:shadow-xl active:scale-95"
                   >
                     Apply Now
                   </Link>
@@ -131,7 +131,7 @@ export default function Courses() {
 
           <div className="mt-16 max-w-4xl mx-auto text-center">
 
-            <h2 className="text-3xl font-bold text-[#2F3D7C]">
+            <h2 className="text-3xl font-bold text-[#1B2A5C]">
               Why Choose AI KISA School Courses?
             </h2>
 

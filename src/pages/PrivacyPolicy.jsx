@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
       />
 
       <section className="max-w-5xl mx-auto px-6 py-16">
-        <h1 className="text-4xl font-bold text-[#2F3D7C] mb-8">
+        <h1 className="text-4xl font-bold text-[#1B2A5C] mb-8">
           Privacy Policy
         </h1>
 
@@ -21,7 +21,7 @@ export default function PrivacyPolicy() {
         <div className="space-y-8 text-gray-700 leading-8">
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               1. Introduction
             </h2>
             <p>
@@ -32,7 +32,7 @@ export default function PrivacyPolicy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               2. Information We Collect
             </h2>
 
@@ -48,7 +48,7 @@ export default function PrivacyPolicy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               3. How We Use Your Information
             </h2>
 
@@ -62,7 +62,7 @@ export default function PrivacyPolicy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               4. Google Analytics
             </h2>
 
@@ -74,7 +74,7 @@ export default function PrivacyPolicy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               5. Cookies
             </h2>
 
@@ -85,7 +85,7 @@ export default function PrivacyPolicy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               6. Data Security
             </h2>
 
@@ -96,7 +96,7 @@ export default function PrivacyPolicy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               7. Third Party Links
             </h2>
 
@@ -107,7 +107,7 @@ export default function PrivacyPolicy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               8. Contact Us
             </h2>
 

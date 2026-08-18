@@ -270,7 +270,7 @@ export default function CourseDetail() {
 
           <div className="p-8">
 
-            <h1 className="text-3xl md:text-4xl font-bold text-[#2F3D7C]">
+            <h1 className="text-3xl md:text-4xl font-bold text-[#1B2A5C]">
               {course.title}
             </h1>
 
@@ -281,7 +281,7 @@ export default function CourseDetail() {
             <div className="grid md:grid-cols-2 gap-6 mt-8">
 
               <div className="bg-blue-50 rounded-xl p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <h2 className="font-bold text-xl text-[#2F3D7C]">
+                <h2 className="font-bold text-xl text-[#1B2A5C]">
                   Course Details
                 </h2>
 
@@ -295,7 +295,7 @@ export default function CourseDetail() {
               </div>
 
               <div className="bg-blue-50 rounded-xl p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <h2 className="font-bold text-xl text-[#2F3D7C]">
+                <h2 className="font-bold text-xl text-[#1B2A5C]">
                   Market Scope
                 </h2>
 
@@ -311,7 +311,7 @@ export default function CourseDetail() {
 
             <div className="mt-10">
 
-              <h2 className="text-2xl font-bold text-[#2F3D7C] mb-4">
+              <h2 className="text-2xl font-bold text-[#1B2A5C] mb-4">
                 What You'll Learn
               </h2>
 
@@ -319,7 +319,7 @@ export default function CourseDetail() {
                 {course.learn.map((item, index) => (
                   <li
                     key={index}
-                    className="bg-gray-100 rounded-lg p-3 cursor-pointer transition-all duration-300 hover:bg-[#2F3D7C] hover:text-white hover:scale-105 hover:shadow-xl"
+                    className="bg-gray-100 rounded-lg p-3 cursor-pointer transition-all duration-300 hover:bg-[#1B2A5C] hover:text-white hover:scale-105 hover:shadow-xl"
                   >
                     ✔ {item}
                   </li>
@@ -330,7 +330,7 @@ export default function CourseDetail() {
                 Looking for all available training programs?
                 <Link
                   to="/courses"
-                  className="text-[#2F3D7C] font-semibold ml-1 underline"
+                  className="text-[#1B2A5C] font-semibold ml-1 underline"
                 >
                   Browse All Courses
                 </Link>
@@ -342,14 +342,14 @@ export default function CourseDetail() {
 
               <Link
                 to="/admission"
-                className="bg-[#2F3D7C] text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-sky-500 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl active:scale-95"
+                className="bg-[#1B2A5C] text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-sky-500 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl active:scale-95"
               >
                 Apply for Admission
               </Link>
 
               <Link
                 to="/courses"
-                className="border-2 border-[#2F3D7C] text-[#2F3D7C] px-8 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-[#2F3D7C] hover:text-white hover:-translate-y-1 hover:scale-105 hover:shadow-2xl active:scale-95"
+                className="border-2 border-[#1B2A5C] text-[#1B2A5C] px-8 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-[#1B2A5C] hover:text-white hover:-translate-y-1 hover:scale-105 hover:shadow-2xl active:scale-95"
               >
                 Back to Programs
               </Link>
@@ -360,7 +360,7 @@ export default function CourseDetail() {
               Need more information?
               <Link
                 to="/contact"
-                className="text-[#2F3D7C] font-semibold ml-1 underline"
+                className="text-[#1B2A5C] font-semibold ml-1 underline"
               >
                 Contact Us
               </Link>

@@ -10,7 +10,7 @@ export default function TermsConditions() {
       />
 
       <section className="max-w-5xl mx-auto px-6 py-16">
-        <h1 className="text-4xl font-bold text-[#2F3D7C] mb-8">
+        <h1 className="text-4xl font-bold text-[#1B2A5C] mb-8">
           Terms & Conditions
         </h1>
 
@@ -21,7 +21,7 @@ export default function TermsConditions() {
         <div className="space-y-8 text-gray-700 leading-8">
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               1. Acceptance of Terms
             </h2>
 
@@ -33,7 +33,7 @@ export default function TermsConditions() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               2. Educational Services
             </h2>
 
@@ -45,7 +45,7 @@ export default function TermsConditions() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               3. Admissions
             </h2>
 
@@ -57,7 +57,7 @@ export default function TermsConditions() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               4. Fees
             </h2>
 
@@ -68,7 +68,7 @@ export default function TermsConditions() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               5. Intellectual Property
             </h2>
 
@@ -81,7 +81,7 @@ export default function TermsConditions() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               6. Website Usage
             </h2>
 
@@ -93,7 +93,7 @@ export default function TermsConditions() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               7. Limitation of Liability
             </h2>
 
@@ -104,7 +104,7 @@ export default function TermsConditions() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               8. Changes
             </h2>
 
@@ -115,7 +115,7 @@ export default function TermsConditions() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F3D7C]">
+            <h2 className="text-2xl font-semibold text-[#1B2A5C]">
               9. Contact
             </h2>
 

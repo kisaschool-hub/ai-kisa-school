@@ -43,7 +43,7 @@ export default function SEO({
 
       {/* Extra SEO */}
 
-      <meta name="theme-color" content="#2F3D7C" />
+      <meta name="theme-color" content="#1B2A5C" />
       <meta name="application-name" content="AI KISA School" />
     </Helmet>
   );

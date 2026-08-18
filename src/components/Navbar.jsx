@@ -2,188 +2,108 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import logo from "../assets/logo.webp";
 
+const desktopLinks = [
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About" },
+  { to: "/academics", label: "Academics" },
+  { to: "/facilities", label: "Facilities" },
+  { to: "/achievements", label: "Achievements" },
+  { to: "/admission", label: "Admission" },
+  { to: "/donor", label: "Donor" },
+  { to: "/contact", label: "Contact" },
+];
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const navLink =
-    "px-4 py-2 rounded-full font-semibold transition-all duration-300";
-
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+    <header className="sticky top-0 z-50 border-b border-[#e6edf7] bg-[#F7F8FB] backdrop-blur-md">
+      <div className="container-page grid h-16 grid-cols-[minmax(0,1fr)_auto] items-center gap-4 md:h-20">
+          <NavLink to="/" className="flex min-w-0 items-center gap-3" onClick={closeMenu}>
+            <img
+              src={logo}
+              alt="AI KISA School logo"
+              className="h-10 w-10 shrink-0 rounded-xl object-cover shadow-[0_8px_18px_rgba(27,42,92,0.12)]"
+            />
 
-        {/* Logo */}
-        <div className="flex items-center gap-3">
-          <img src={logo} alt="KISA Model School" className="h-12 sm:h-14" />
+            <div className="min-w-0">
+              <span className="block truncate font-display text-lg font-semibold leading-tight text-[#1B2A5C]">AI KISA School</span>
+              <span className="block truncate text-xs text-[#4D5967]">Free education. Real futures.</span>
+            </div>
+          </NavLink>
 
-          <div>
-            <h2 className="text-lg sm:text-2xl font-bold text-[#2F3D7C]">
-              KISA Model School
-            </h2>
+        <div className="flex flex-1 items-center justify-end gap-4">
+            <nav className="hidden items-center gap-1 lg:flex">
+            {desktopLinks.map((item) => (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                className={({ isActive }) =>
+                    `rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:bg-[#EEF4FF] hover:text-[#1B2A5C] ${
+                      isActive ? "text-[#1B2A5C] bg-[#EEF4FF]" : "text-[#47585a]"
+                    }`
+                }
+              >
+                {item.label}
+              </NavLink>
+            ))}
+          </nav>
 
-            <p className="hidden sm:block text-sm text-gray-500">
-              Learn • Create • Innovate
-            </p>
-          </div>
+          <NavLink to="/admission" className="hidden ml-2 lg:inline-flex">
+            <span className="inline-flex items-center justify-center rounded-full bg-[#DFB863] px-4 py-2 text-sm font-semibold text-[#1B2A5C]">Apply free</span>
+          </NavLink>
+
+          <button onClick={() => setMenuOpen(true)} className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-[#dfe5e0] bg-white lg:hidden" aria-label="Open menu">
+            ☰
+          </button>
         </div>
-
-        {/* Desktop Navigation */}
-
-        <nav className="hidden lg:flex items-center gap-1 bg-[#EEF4FB] rounded-full px-3 py-2">
-
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `${navLink} ${
-                isActive
-                  ? "bg-[#2F3D7C] text-white shadow-md"
-                  : "text-[#2F3D7C] hover:bg-[#DDECF9]"
-              }`
-            }
-          >
-            Home
-          </NavLink>
-
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `${navLink} ${
-                isActive
-                  ? "bg-[#2F3D7C] text-white shadow-md"
-                  : "text-[#2F3D7C] hover:bg-[#DDECF9]"
-              }`
-            }
-          >
-            About
-          </NavLink>
-
-          <NavLink
-            to="/courses"
-            className={({ isActive }) =>
-              `${navLink} ${
-                isActive
-                  ? "bg-[#2F3D7C] text-white shadow-md"
-                  : "text-[#2F3D7C] hover:bg-[#DDECF9]"
-              }`
-            }
-          >
-            Programs
-          </NavLink>
-
-          <NavLink
-            to="/achievements"
-            className={({ isActive }) =>
-              `${navLink} ${
-                isActive
-                  ? "bg-[#2F3D7C] text-white shadow-md"
-                  : "text-[#2F3D7C] hover:bg-[#DDECF9]"
-              }`
-            }
-          >
-            Achievements
-          </NavLink>
-
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              `${navLink} ${
-                isActive
-                  ? "bg-[#2F3D7C] text-white shadow-md"
-                  : "text-[#2F3D7C] hover:bg-[#DDECF9]"
-              }`
-            }
-          >
-            Contact
-          </NavLink>
-
-          <NavLink
-            to="/admission"
-            className="ml-2 bg-[#74BDE8] hover:bg-[#2F3D7C] text-white px-5 py-2 rounded-full font-semibold transition-all duration-300"
-          >
-            Admission
-          </NavLink>
-
-        </nav>
-
-        {/* Mobile Hamburger */}
-
-        <button
-          onClick={() => setMenuOpen(true)}
-          className="lg:hidden text-4xl text-[#2F3D7C]"
-        >
-          ☰
-        </button>
-
       </div>
 
-      {/* Mobile Overlay */}
-
       <div
-        className={`lg:hidden fixed inset-0 bg-black/40 transition-opacity duration-300 ${
-          menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        className={`fixed inset-0 bg-black/35 transition-opacity duration-300 lg:hidden ${
+          menuOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}
         onClick={closeMenu}
       />
 
-      {/* Mobile Menu */}
-
       <div
-        className={`lg:hidden fixed top-0 right-0 h-full w-72 bg-white shadow-2xl transition-transform duration-300 ${
+        className={`fixed right-0 top-0 h-full w-[85%] max-w-sm bg-white shadow-2xl transition-transform duration-300 lg:hidden ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-
-        <div className="flex justify-between items-center p-5 border-b">
-
-          <h2 className="font-bold text-xl text-[#2F3D7C]">
-            Menu
-          </h2>
-
-          <button
-            onClick={closeMenu}
-            className="text-3xl text-[#2F3D7C]"
-          >
+        <div className="flex items-center justify-between border-b border-slate-200 p-5">
+          <h2 className="text-xl font-extrabold text-[#1B2A5C]">Menu</h2>
+          <button onClick={closeMenu} className="text-3xl text-[#1B2A5C]" aria-label="Close menu">
             ✕
           </button>
-
         </div>
 
-        <div className="flex flex-col p-5 gap-4">
-
-          <NavLink to="/" onClick={closeMenu}>
-            Home
-          </NavLink>
-
-          <NavLink to="/courses" onClick={closeMenu}>
-            Programs
-          </NavLink>
-
-          <NavLink to="/achievements" onClick={closeMenu}>
-            Achievements
-          </NavLink>
-
-          <NavLink to="/about" onClick={closeMenu}>
-            About
-          </NavLink>
-
-          <NavLink to="/contact" onClick={closeMenu}>
-            Contact
-          </NavLink>
+        <div className="flex flex-col gap-2 p-5">
+          {desktopLinks.map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                `rounded-2xl px-4 py-3 font-semibold ${
+                  isActive ? "bg-[#1B2A5C] text-white" : "text-slate-700 hover:bg-slate-100"
+                }`
+              }
+            >
+              {item.label}
+            </NavLink>
+          ))}
 
           <NavLink
             to="/admission"
             onClick={closeMenu}
-            className="mt-4 bg-[#2F3D7C] text-white text-center py-3 rounded-xl font-semibold"
+            className="mt-3 rounded-2xl bg-[#DFB863] px-4 py-3 text-center font-semibold text-[#1B2A5C]"
           >
-            Admission
+            Apply free
           </NavLink>
-
         </div>
-
       </div>
-
     </header>
   );
 }
