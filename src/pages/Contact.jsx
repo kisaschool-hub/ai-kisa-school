@@ -4,21 +4,23 @@ import { CheckCircle2, Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-
 import SEO from "../components/SEO";
 import PageHero, { SectionHeading } from "../components/PageHero";
 
-const CONTACT_ACCESS_KEY = "REPLACE_WITH_CONTACT_WEB3FORMS_KEY";
+const CONTACT_ACCESS_KEY = "9304ab5b-a426-49af-99bd-4261ae7ce561";
 const GENERAL_CONTACT_MESSAGE =
   "Assalam-o-Alaikum, I have just submitted the contact form on the AI KISA School website. I would appreciate your response regarding my inquiry.";
 const CAMPUS_VISIT_MESSAGE =
   "Assalam-o-Alaikum, I have just submitted a campus visit request through the AI KISA School website. Please confirm a suitable time for my visit.";
 
 const details = [
-  { icon: MapPin, label: "Campus", value: "B-12, Survey No 492, Jaffar-e-Tayyar Society, Malir" },
+  { icon: MapPin, label: "Campus", value: "B 12, Survey No 492, Jaffar e Tayyar Society, Malir" },
   { icon: Phone, label: "Phone", value: "+92 331 3600353" },
   { icon: Mail, label: "Email", value: "contact@aikisaschool.com" },
-  { icon: Clock, label: "School timings", value: "8:00 AM – 1:30 PM" },
+  { icon: Clock, label: "School timings", value: "8:00 AM to 1:30 PM" },
 ];
 
 function Contact() {
   const [sent, setSent] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submissionError, setSubmissionError] = useState("");
   const [waMessage, setWaMessage] = useState("");
   const [formData, setFormData] = useState({
     name: "",
@@ -52,10 +54,14 @@ function Contact() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    if (isSubmitting) return;
     if (!validate()) return;
 
+    setSubmissionError("");
+    setIsSubmitting(true);
     const payload = new FormData();
     payload.append("access_key", CONTACT_ACCESS_KEY);
+    payload.append("to", "contact@aikisaschool.com");
     payload.append("subject", "New Contact Form - AI KISA School");
     payload.append("name", formData.name);
     payload.append("email", formData.email);
@@ -69,7 +75,8 @@ function Contact() {
         headers: { Accept: "application/json" },
       });
 
-      if (!response.ok) {
+      const result = await response.json();
+      if (!response.ok || !result.success) {
         throw new Error("Submission failed");
       }
 
@@ -84,16 +91,18 @@ function Contact() {
       });
     } catch (error) {
       console.error("Contact submission error:", error);
-      alert("There was a problem submitting the form. Please email us directly instead.");
+      setSubmissionError("There was a problem submitting your message. Please try again or email us directly.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   return (
     <>
       <SEO
-        title="Contact & Visit | AI KISA School"
-        description="Get in touch with AI KISA School for enquiries, admissions, and school visits."
-        url="https://aikisaschool.com/contact"
+        title="Contact AI KISA School Karachi | Get in Touch"
+        description="Contact AI KISA School Karachi for admissions, school information, campus visits and general enquiries."
+        url="https://www.aikisaschool.com/contact"
       />
 
       <main className="bg-[#F5F8FC] text-[#1F2937]">
@@ -155,6 +164,7 @@ function Contact() {
             ) : (
               <form onSubmit={handleSubmit} className="grid gap-5">
                 <h2 className="text-xl font-bold leading-[1.15] tracking-[-0.04em] text-[#1B2A5C]">Send a message</h2>
+                {submissionError ? <p className="text-sm text-red-600" role="alert">{submissionError}</p> : null}
 
                 <div className="grid gap-5 sm:grid-cols-2">
                   <label className="block">
@@ -230,9 +240,10 @@ function Contact() {
 
                 <button
                   type="submit"
+                  disabled={isSubmitting}
                   className="inline-flex w-full items-center justify-center rounded-full bg-[#1B2A5C] px-5 py-3 text-sm font-semibold text-white shadow-[0_8px_18px_rgba(27,42,92,0.16)] transition-transform hover:-translate-y-0.5"
                 >
-                  Send message
+                  {isSubmitting ? "Sending" : "Send message"}
                 </button>
 
               </form>

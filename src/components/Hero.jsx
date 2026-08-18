@@ -4,9 +4,9 @@ import PageHero from "./PageHero";
 export default function Hero() {
   return (
     <PageHero
-      badgeText="Tuition-free — admissions open"
-      title="A world-class school that costs families nothing."
-      description="AI KISA School educates curious young people through strong academics, character formation and real experience with artificial intelligence — completely free."
+      badgeText="Tuition free, admissions open"
+      title="A world class school that costs families nothing."
+      description="AI KISA School educates curious young people through strong academics, character formation and real experience with artificial intelligence, completely free."
       backgroundImage="/Homehero.webp"
       mobileBackgroundImage="/Homeheromobile.webp"
     >

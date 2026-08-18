@@ -21,7 +21,7 @@ export default function Impact() {
       <SEO
         title="Our Impact | AI KISA School"
         description="Learn about the community impact of AI KISA School through free education, technology access, student opportunities, and digital learning."
-        url="https://aikisaschool.com/impact"
+        url="https://www.aikisaschool.com/impact"
       />
 
       <main className="bg-[#F5F8FC] text-[#1F2937]">

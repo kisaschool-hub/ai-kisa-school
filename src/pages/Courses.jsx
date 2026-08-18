@@ -31,7 +31,7 @@ export default function Courses() {
       weekly: "3 Classes / Week",
     },
     {
-      title: "Shopify & E-Commerce",
+      title: "Shopify and Ecommerce",
       slug: "shopify-ecommerce",
       image: shopify,
       duration: "3 Months",
@@ -58,7 +58,7 @@ export default function Courses() {
       <SEO
         title="AI Courses in Pakistan | Coding, Robotics & Digital Skills | AI KISA School"
         description="Explore AI, Coding, Robotics, Data Analytics, Digital Marketing, Shopify and Digital Skills courses at AI KISA School. Learn online from anywhere in Pakistan."
-        url="https://aikisaschool.com/courses"
+        url="https://www.aikisaschool.com/courses"
       />
 
       <section className="py-20 bg-[#F8FBFF]">
@@ -70,7 +70,7 @@ export default function Courses() {
 
           <p className="text-center text-gray-600 mt-3 mb-10">
             Learn Artificial Intelligence, Coding, Robotics, Data Analytics,
-            Shopify, Digital Marketing and other future-ready digital skills
+            Shopify, Digital Marketing and other future ready digital skills
             from AI KISA School. Our programs are available for students across Pakistan.
           </p>
 
@@ -136,7 +136,7 @@ export default function Courses() {
             </h2>
 
             <p className="mt-6 text-gray-700 leading-8">
-              AI KISA School provides practical, project-based training in
+              AI KISA School provides practical, project based training in
               Artificial Intelligence, Coding, Robotics, Data Analytics,
               Shopify, Digital Marketing and Digital Skills. Our courses are
               designed to prepare students for future careers and can be

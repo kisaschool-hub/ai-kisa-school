@@ -3,11 +3,11 @@ import { CheckCircle2, MessageCircle } from "lucide-react";
 import SEO from "../components/SEO";
 import PageHero from "../components/PageHero";
 
-const DONOR_ACCESS_KEY = "REPLACE_WITH_DONOR_WEB3FORMS_KEY";
+const DONOR_ACCESS_KEY = "9304ab5b-a426-49af-99bd-4261ae7ce561";
 
 const donationOptions = [
   { value: "Monthly Support", label: "Monthly Support" },
-  { value: "One-time Gift", label: "One-time Gift" },
+  { value: "One time Gift", label: "One time Gift" },
   { value: "Sponsor a Learner", label: "Sponsor a Learner" },
 ];
 
@@ -26,6 +26,8 @@ export default function Donor() {
   const [formData, setFormData] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submissionError, setSubmissionError] = useState("");
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -59,10 +61,14 @@ export default function Donor() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    if (isSubmitting) return;
     if (!validate()) return;
 
+    setSubmissionError("");
+    setIsSubmitting(true);
     const payload = new FormData();
     payload.append("access_key", DONOR_ACCESS_KEY);
+    payload.append("to", "donor@aikisaschool.com");
     payload.append("subject", "New Donation/Support Inquiry - AI KISA School");
     payload.append("donor_name", formData.donorName);
     payload.append("donor_cnic", formData.donorCnic);
@@ -77,13 +83,16 @@ export default function Donor() {
         headers: { Accept: "application/json" },
       });
 
-      if (!response.ok) throw new Error("Submission failed");
+      const result = await response.json();
+      if (!response.ok || !result.success) throw new Error("Submission failed");
 
       setSubmitted(true);
       setFormData(initialForm);
     } catch (error) {
       console.error("Donor submission error:", error);
-      alert("There was a problem submitting the form. Please contact the school directly to complete your donation enquiry.");
+      setSubmissionError("There was a problem submitting your support enquiry. Please try again or contact the school directly.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -92,14 +101,14 @@ export default function Donor() {
       <SEO
         title="Become a Donor | AI KISA School"
         description="Support AI KISA School and help provide free, future-ready education to children who deserve opportunity and access to modern technology."
-        url="https://aikisaschool.com/donor"
+        url="https://www.aikisaschool.com/donor"
       />
 
       <main className="bg-[#F5F8FC] text-[#1F2937]">
         <PageHero
           eyebrow="DONOR"
           title="Help us give every child a real chance."
-          description="Your support helps AI KISA School keep learning free, future-focused and accessible for students who deserve quality education and a path to opportunity."
+          description="Your support helps AI KISA School keep learning free, focused on the future and accessible for students who deserve quality education and a path to opportunity."
           backgroundImage="/Donor.webp"
           mobileBackgroundImage="/Donormobile.webp"
         />
@@ -112,7 +121,7 @@ export default function Donor() {
                 Free education, practical learning, and real opportunity.
               </h2>
               <p className="mt-5 text-base leading-8 text-[#4d5967]">
-                AI KISA School provides free, future-ready education to children who may otherwise have limited access to quality schooling. Alongside foundational academic learning, we introduce students to Artificial Intelligence, AI tools, coding, web development, digital literacy, content creation, digital marketing and data analytics. Through practical, project-based learning and access to Chromebooks and laptops, students gain hands-on experience with modern technology while developing communication, creativity, problem-solving skills and confidence.
+                AI KISA School provides free, future ready education to children who may otherwise have limited access to quality schooling. Alongside foundational academic learning, we introduce students to Artificial Intelligence, AI tools, coding, web development, digital literacy, content creation, digital marketing and data analytics. Through practical, project based learning and access to Chromebooks and laptops, students gain hands on experience with modern technology while developing communication, creativity, problem solving skills and confidence.
               </p>
             </div>
 
@@ -147,7 +156,7 @@ export default function Donor() {
                   Creating access, confidence and opportunity.
                 </h2>
                 <p className="mt-5 text-base leading-8 text-[#4d5967]">
-                  Since its establishment, AI KISA School has helped create meaningful educational opportunities for children who might otherwise be excluded from quality education. Today, students are not only continuing their education but are also developing confidence, participating in technology and creative projects, and applying their skills in real-world activities. Our students have achieved recognition in competitions, including winning Rs. 100,000 in the AI Preneur competition and succeeding in Iqbal Day speaking competitions, demonstrating how access to education, technology and opportunity can help children discover their potential and build a more confident future.
+                  Since its establishment, AI KISA School has helped create meaningful educational opportunities for children who might otherwise be excluded from quality education. Today, students are not only continuing their education but are also developing confidence, participating in technology and creative projects, and applying their skills in real world activities. Our students have achieved recognition in competitions, including winning Rs. 100,000 in the AI Preneur competition and succeeding in Iqbal Day speaking competitions, demonstrating how access to education, technology and opportunity can help children discover their potential and build a more confident future.
                 </p>
               </div>
             </div>
@@ -158,10 +167,10 @@ export default function Donor() {
           <div className="rounded-[32px] bg-[linear-gradient(135deg,#1B2A5C_0%,#2E4A9E_100%)] px-6 py-10 text-center text-white shadow-[0_18px_44px_rgba(27,42,92,0.18)] sm:px-10">
             <p className="text-[0.72rem] font-bold uppercase tracking-[0.2em] text-[#DFB863]">Choose your support</p>
             <h2 className="mt-4 text-3xl font-black leading-[1.06] tracking-[-0.04em] text-white md:text-4xl">
-              Help fund free, future-ready education.
+                Help fund free, future ready education.
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#edf4ef]">
-              Your generosity keeps learning accessible, practical and future-focused for every child.
+              Your generosity keeps learning accessible, practical and future focused for every child.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center">
@@ -209,6 +218,7 @@ export default function Donor() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
+                {submissionError ? <p className="text-sm text-red-600" role="alert">{submissionError}</p> : null}
                 <div className="grid gap-4 md:grid-cols-2">
                   <label className="block">
                     <span className="mb-1.5 block text-[0.82rem] font-medium text-[#1B2A5C]">Donor Name</span>
@@ -296,9 +306,10 @@ export default function Donor() {
 
                 <button
                   type="submit"
+                  disabled={isSubmitting}
                   className="inline-flex w-full items-center justify-center rounded-full bg-[#1B2A5C] px-5 py-3 text-sm font-semibold text-white shadow-[0_8px_18px_rgba(27,42,92,0.16)] transition-transform hover:-translate-y-0.5"
                 >
-                  Submit donation enquiry
+                  {isSubmitting ? "Sending" : "Submit donation enquiry"}
                 </button>
               </form>
             )}

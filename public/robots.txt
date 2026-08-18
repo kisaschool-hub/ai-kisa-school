@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aikisaschool.com/sitemap.xml
+Sitemap: https://www.aikisaschool.com/sitemap.xml

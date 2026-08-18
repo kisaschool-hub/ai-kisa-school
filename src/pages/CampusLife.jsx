@@ -14,9 +14,9 @@ export default function CampusLife() {
   return (
     <>
       <SEO
-        title="Campus Life | AI KISA School"
-        description="Explore school life at AI KISA School, from sports and events to workshops, competitions, and celebrations."
-        url="https://aikisaschool.com/campus-life"
+        title="Campus Life | AI KISA School Karachi"
+        description="Discover campus life at AI KISA School through student activities, workshops, competitions, projects, events and school experiences."
+        url="https://www.aikisaschool.com/campus-life"
       />
 
       <main className="bg-[#F5F8FC] text-[#1F2937]">

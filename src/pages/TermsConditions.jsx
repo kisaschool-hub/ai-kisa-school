@@ -6,7 +6,7 @@ export default function TermsConditions() {
       <SEO
         title="Terms & Conditions | AI KISA School"
         description="Read the Terms & Conditions of AI KISA School regarding admissions, courses, website usage and intellectual property."
-        url="https://aikisaschool.com/terms-conditions"
+        url="https://www.aikisaschool.com/terms-conditions"
       />
 
       <section className="max-w-5xl mx-auto px-6 py-16">

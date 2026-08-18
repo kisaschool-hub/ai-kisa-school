@@ -7,7 +7,7 @@ import img2 from "../assets/Courses/achievements/iqbal-day/iqbal 2.png";
 
 const sliderImages = [mainImage, img1, img2];
 
-const students = ["Abeeha", "Daina", "Dur-e-Najaf", "M. Ali"];
+const students = ["Abeeha", "Daina", "Dur e Najaf", "M. Ali"];
 
 export default function IqbalDetail() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -85,7 +85,7 @@ export default function IqbalDetail() {
                 Representing AI KISA School, our students confidently delivered inspiring Urdu speeches based on the vision and philosophy of Allama Muhammad Iqbal. Although each presentation lasted only one minute, every participant demonstrated excellent preparation and communication skills.
               </p>
               <p>
-                Their confidence, stage presence, public speaking abilities and well-prepared content impressed the judges, earning <strong>2nd Position</strong> and <strong>3rd Position</strong>, along with trophies and certificates for AI KISA School.
+                Their confidence, stage presence, public speaking abilities and well prepared content impressed the judges, earning <strong>2nd Position</strong> and <strong>3rd Position</strong>, along with trophies and certificates for AI KISA School.
               </p>
             </div>
           </div>
@@ -144,7 +144,7 @@ export default function IqbalDetail() {
             Skills that led to victory
           </h2>
           <p className="mx-auto mt-5 max-w-4xl text-[1.02rem] leading-8 text-[#4d5967]">
-            During the Iqbal Day Urdu Speech Competition, our students showcased exceptional confidence, public speaking skills and well-prepared content, helping AI KISA School secure 2nd and 3rd positions.
+            During the Iqbal Day Urdu Speech Competition, our students showcased exceptional confidence, public speaking skills and well prepared content, helping AI KISA School secure 2nd and 3rd positions.
           </p>
         </div>
 
@@ -175,7 +175,7 @@ export default function IqbalDetail() {
               Speech Preparation
             </h3>
             <p className="mt-4 text-[1rem] leading-7 text-[#4d5967]">
-              Well-structured Urdu speeches, thoughtful content and consistent practice played a key role in achieving success.
+              Well structured Urdu speeches, thoughtful content and consistent practice played a key role in achieving success.
             </p>
           </div>
         </div>

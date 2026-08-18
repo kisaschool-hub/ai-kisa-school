@@ -18,7 +18,7 @@ function Footer() {
               <span className="text-lg font-semibold text-white">AI KISA School</span>
             </div>
             <p className="max-w-sm text-sm leading-6 text-white/75">
-              A tuition-free school where every learner grows in character, academics and technology — with AI literacy woven through daily learning.
+              A tuition free school where every learner grows in character, academics and technology, with AI literacy woven through daily learning.
             </p>
 
             <div className="flex items-center gap-3">
@@ -62,7 +62,7 @@ function Footer() {
             <ul className="space-y-3 text-sm text-white/75">
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="mt-0.5 shrink-0 text-[#DFB863]" />
-                <span className="leading-6">B-12, Survey No 492, Jaffar-e-Tayyar Society, Malir</span>
+                <span className="leading-6">B 12, Survey No 492, Jaffar e Tayyar Society, Malir</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="shrink-0 text-[#DFB863]" />
@@ -70,7 +70,7 @@ function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Clock size={18} className="shrink-0 text-[#DFB863]" />
-                <span>8:00 AM – 1:30 PM</span>
+                <span>8:00 AM to 1:30 PM</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="shrink-0 text-[#DFB863]" />
@@ -84,7 +84,7 @@ function Footer() {
       <div className="border-t border-white/10">
         <div className="container-page flex flex-col gap-2 px-4 py-5 text-xs text-white/60 sm:flex-row sm:items-center sm:justify-between md:px-6">
           <p>© 2026 AI KISA School. Education is free, always.</p>
-          <p>Developed by Taqi Mehdi — 0317 7741792</p>
+          <p>Developed by Taqi Mehdi, 0317 7741792</p>
         </div>
       </div>
     </footer>

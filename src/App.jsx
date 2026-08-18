@@ -5,6 +5,7 @@ import TermsConditions from "./pages/TermsConditions";
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import NotFound from "./pages/NotFound";
 
 const Home = lazy(() => import("./pages/Home"));
 const Academics = lazy(() => import("./pages/Academics"));
@@ -72,6 +73,7 @@ function App() {
 
           <Route path="/achievement-detail" element={<AchievementDetail />} />
           <Route path="/iqbal-detail" element={<IqbalDetail />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
 

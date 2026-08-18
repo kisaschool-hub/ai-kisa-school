@@ -17,6 +17,25 @@ const initialForm = {
   reasonForScholarship: "",
 };
 
+const faqs = [
+  {
+    question: "Is AI KISA School a free school?",
+    answer: "Yes. AI KISA School is committed to providing free, high quality education to children who may not be able to afford expensive private schooling.",
+  },
+  {
+    question: "What does AI KISA School teach?",
+    answer: "Students receive strong foundational education alongside Artificial Intelligence, coding, digital literacy, computer skills, robotics, creative skills and other future ready learning.",
+  },
+  {
+    question: "Who can apply for admission?",
+    answer: "Admission is intended for students who meet the school's eligibility requirements. Families can contact the school or submit the admission application to learn more about eligibility and available places.",
+  },
+  {
+    question: "How can I apply for admission?",
+    answer: "Parents or guardians can complete the admission application form on the website or contact AI KISA School directly for guidance about the admission process.",
+  },
+];
+
 function Admission() {
   const [formData, setFormData] = useState(initialForm);
   const [errors, setErrors] = useState({});
@@ -85,15 +104,16 @@ function Admission() {
   return (
     <>
       <SEO
-        title="Admission — Apply Free | AI KISA School"
-        description="Learn how to apply for admission at AI KISA School, including the steps, application enquiry form, and what to expect."
-        url="https://aikisaschool.com/admission"
+        title="Admission | AI KISA School Karachi"
+        description="Learn about admission at AI KISA School Karachi, eligibility, application process and free education opportunities for deserving students."
+        url="https://www.aikisaschool.com/admission"
+        faq={faqs}
       />
 
       <main className="bg-[#F5F8FC] text-[#1F2937]">
         <PageHero
           eyebrow="Admission"
-          title="Admission is open — and it costs nothing."
+          title="Admission is open and it costs nothing."
           description="There is no tuition, no application fee and no entrance payment. We welcome enquiries from every family."
           backgroundImage="/Admission.webp"
           mobileBackgroundImage="/Admissionmobile.webp"
@@ -267,6 +287,22 @@ function Admission() {
                   </button>
                 </form>
               )}
+
+              <section className="mt-10 border-t border-[#e7e1d8] pt-8" aria-labelledby="admission-faq-heading">
+                <h2 id="admission-faq-heading" className="text-2xl font-black leading-[1.06] tracking-[-0.04em] text-[#1F2937]">
+                  Frequently asked questions
+                </h2>
+                <div className="mt-4 divide-y divide-[#e7e1d8] border-y border-[#e7e1d8]">
+                  {faqs.map((faq) => (
+                    <details key={faq.question} className="group py-4">
+                      <summary className="cursor-pointer list-none pr-8 text-left text-base font-semibold text-[#1B2A5C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1B2A5C] [&::-webkit-details-marker]:hidden">
+                        {faq.question}
+                      </summary>
+                      <p className="mt-3 text-sm leading-6 text-[#4d5967]">{faq.answer}</p>
+                    </details>
+                  ))}
+                </div>
+              </section>
 
               <div className="mt-6 text-center">
                 <Link

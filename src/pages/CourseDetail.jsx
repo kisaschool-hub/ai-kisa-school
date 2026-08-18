@@ -17,7 +17,7 @@ export default function CourseDetail() {
       duration: "3 Months",
       weekly: "3 Classes / Week",
       overview:
-        "AI Foundations is a beginner-friendly course designed for students, professionals and freelancers across Pakistan who want to understand modern Artificial Intelligence. During this program, you will learn ChatGPT, Google Gemini, Prompt Engineering, AI productivity tools, AI image generation and practical AI applications used in education and business. The course focuses on hands-on learning so you can confidently use AI tools in real-world projects, improve productivity and prepare for future career opportunities.",
+        "AI Foundations is a beginner friendly course designed for students, professionals and freelancers across Pakistan who want to understand modern Artificial Intelligence. During this program, you will learn ChatGPT, Google Gemini, Prompt Engineering, AI productivity tools, AI image generation and practical AI applications used in education and business. The course focuses on hands on learning so you can confidently use AI tools in real world projects, improve productivity and prepare for future career opportunities.",
       learn: [
         "Introduction to AI",
         "ChatGPT",
@@ -87,12 +87,12 @@ export default function CourseDetail() {
     },
 
     "shopify-ecommerce": {
-      title: "Shopify & E-Commerce",
+      title: "Shopify and Ecommerce",
       image: shopify,
       duration: "3 Months",
       weekly: "3 Classes / Week",
       overview:
-        "Build and manage professional online stores using Shopify and modern e-commerce strategies.",
+        "Build and manage professional online stores using Shopify and modern ecommerce strategies.",
       learn: [
         "Store Setup",
         "Product Listing",
@@ -102,7 +102,7 @@ export default function CourseDetail() {
       ],
       scope: [
         "Shopify Developer",
-        "E-Commerce Manager",
+        "Ecommerce Manager",
         "Online Business Owner"
       ]
     },
@@ -113,7 +113,7 @@ export default function CourseDetail() {
       duration: "2 Months",
       weekly: "3 Classes / Week",
       overview:
-        "Create high-quality content using AI tools and Canva for personal branding and business growth.",
+        "Create high quality content using AI tools and Canva for personal branding and business growth.",
       learn: [
         "AI Content Writing",
         "Canva Pro",
@@ -175,7 +175,7 @@ export default function CourseDetail() {
     "shopify-ecommerce": {
       title: "Shopify & E-Commerce Course | AI KISA School Pakistan",
       description:
-        "Learn Shopify Store Development, Dropshipping and E-Commerce Business.",
+        "Learn Shopify Store Development, Dropshipping and Ecommerce Business.",
     },
 
     "content-creation": {
@@ -207,7 +207,7 @@ export default function CourseDetail() {
     provider: {
       "@type": "EducationalOrganization",
       name: "AI KISA School",
-      sameAs: "https://aikisaschool.com"
+      sameAs: "https://www.aikisaschool.com/"
     }
   };
 
@@ -219,19 +219,19 @@ export default function CourseDetail() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://aikisaschool.com"
+        "item": "https://www.aikisaschool.com/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Programs",
-        "item": "https://aikisaschool.com/courses"
+        "item": "https://www.aikisaschool.com/academics"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": course.title,
-        "item": `https://aikisaschool.com/programs/${slug}`
+        "item": `https://www.aikisaschool.com/programs/${slug}`
       }
     ]
   };
@@ -241,7 +241,7 @@ export default function CourseDetail() {
       <SEO
         title={seoData[slug]?.title || course.title}
         description={seoData[slug]?.description || course.overview}
-        url={`https://aikisaschool.com/programs/${slug}`}
+        url={`https://www.aikisaschool.com/programs/${slug}`}
       />
 
       <script

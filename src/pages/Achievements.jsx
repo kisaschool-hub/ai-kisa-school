@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 import PageHero, { SectionHeading } from "../components/PageHero";
-import { IMG } from "../lib/site";
 import preneur from "../assets/Courses/achievements/main.png";
 import iqbal from "../assets/Courses/achievements/iqbal-day/iqbal main.png";
 
@@ -51,7 +51,13 @@ const milestones = [
 
 export default function Achievements() {
   return (
-    <main className="bg-[#F5F8FC] text-[#1F2937]">
+    <>
+      <SEO
+        title="Student Achievements | AI KISA School Karachi"
+        description="Discover AI KISA School student achievements, projects, competitions, awards, events and community initiatives."
+        url="https://www.aikisaschool.com/achievements"
+      />
+      <main className="bg-[#F5F8FC] text-[#1F2937]">
       <PageHero
         eyebrow="Achievements"
         title="Results that prove free education can be excellent education."
@@ -168,6 +174,7 @@ export default function Achievements() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }

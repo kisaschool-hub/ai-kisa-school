@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import {
   BrainCircuit,
-  Compass,
-  Lightbulb,
   Rocket,
   Sparkles,
   Users,
@@ -14,17 +12,17 @@ const values = [
   {
     icon: Sparkles,
     title: "Curiosity & Innovation",
-    text: "We encourage students to ask questions, explore new ideas and discover how technology can solve real-world problems.",
+    text: "We encourage students to ask questions, explore new ideas and discover how technology can solve real world problems.",
   },
   {
     icon: Rocket,
-    title: "Real-World Skills",
+    title: "Real World Skills",
     text: "Learning goes beyond textbooks. Students develop practical skills through projects, creativity, technology and experiences that connect learning to the world around them.",
   },
   {
     icon: Users,
     title: "Confidence & Expression",
-    text: "We help students communicate their ideas with confidence — through presentations, public speaking, teamwork and creative expression.",
+    text: "We help students communicate their ideas with confidence through presentations, public speaking, teamwork and creative expression.",
   },
   {
     icon: BrainCircuit,
@@ -37,16 +35,16 @@ const About = () => {
   return (
     <>
       <SEO
-        title="About AI KISA School | Mission, Values & Story"
-        description="Learn about AI KISA School, our story, mission, values, and vision for free, future-focused education."
-        url="https://aikisaschool.com/about"
+        title="About AI KISA School Karachi | Our Mission & Vision"
+        description="Learn about AI KISA School Karachi, our mission to provide free education, our vision for future-ready learning and our commitment to students."
+        url="https://www.aikisaschool.com/about"
       />
 
       <main className="bg-[#F5F8FC] text-[#1F2937]">
         <PageHero
           eyebrow="About us"
           title="A school founded on one belief: talent is everywhere, opportunity is not."
-          description="AI KISA School was created so that ability — not family income — decides how far a young person can go."
+          description="AI KISA School was created so that ability, not family income, decides how far a young person can go."
           backgroundImage="/About.webp"
           mobileBackgroundImage="/Aboutmobile.webp"
         />
@@ -94,14 +92,14 @@ const About = () => {
               <div className="surface-card p-8">
                 <h3 className="text-xl font-semibold">Mission</h3>
                 <p className="mt-3 text-muted-foreground">
-                  We provide a free, high-quality education for children who previously lacked access, combining strong academics, character formation and real, practical technology skills so young people can thrive.
+                  We provide a free, high quality education for children who previously lacked access, combining strong academics, character formation and real, practical technology skills so young people can thrive.
                 </p>
               </div>
 
               <div className="surface-card p-8">
                 <h3 className="text-xl font-semibold">Vision</h3>
                 <p className="mt-3 text-muted-foreground">
-                  Graduates who confidently lead in their communities and use technology responsibly to improve lives — with the skills and opportunities to choose their future.
+                  Graduates who confidently lead in their communities and use technology responsibly to improve lives, with the skills and opportunities to choose their future.
                 </p>
               </div>
             </div>
@@ -135,7 +133,7 @@ const About = () => {
               Every child deserves a school that costs nothing and expects everything.
             </h2>
             <p className="mx-auto mt-5 max-w-3xl text-[1.08rem] leading-8 text-[#edf4ef]">
-              Admissions are open to all families. No tuition, no hidden fees — only a commitment to learning.
+              Admissions are open to all families. No tuition, no hidden fees, only a commitment to learning.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
               <Link

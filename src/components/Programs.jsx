@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const learningAreas = [
-  { title: "AI Education", description: "AI concepts, digital thinking, and creativity for real-world learning." },
+  { title: "AI Education", description: "AI concepts, digital thinking, and creativity for real world learning." },
   { title: "Coding", description: "Logical thinking and practical coding experiences for growing students." },
-  { title: "Robotics", description: "Hands-on STEM exploration through building and experimentation." },
+  { title: "Robotics", description: "Hands on STEM exploration through building and experimentation." },
   { title: "Creative Skills", description: "Design, storytelling, digital media, and presentation confidence." },
   { title: "Entrepreneurship", description: "Ideas, leadership, planning, and future career readiness." },
   { title: "Digital Literacy", description: "Technology fluency, safe online habits, and digital confidence." },
@@ -17,7 +17,7 @@ export default function Programs() {
           Our Learning Areas
         </p>
         <h2 className="text-3xl lg:text-4xl font-extrabold text-center text-[#1B2A5C] mt-3">
-          Future-ready skills for every learner
+          Future ready skills for every learner
         </h2>
         <p className="text-center text-gray-600 mt-5 mb-10 text-base max-w-3xl mx-auto">
           Students grow through a balanced school curriculum that combines academic strength, digital confidence, creativity, and character.

@@ -12,7 +12,7 @@ const testimonials = [
   {
     category: "Teachers",
     quote:
-      "The school values practical learning, student well-being, and future-focused education, which helps every child build confidence and curiosity.",
+      "The school values practical learning, student wellbeing, and future focused education, which helps every child build confidence and curiosity.",
   },
 ];
 
@@ -28,7 +28,7 @@ export default function Reviews() {
             Learning experiences families trust
           </h2>
           <p className="mt-4 text-gray-600 text-base max-w-3xl mx-auto">
-            Families value the warmth, structure and future-focused learning environment that help children grow with confidence.
+            Families value the warmth, structure and future focused learning environment that help children grow with confidence.
           </p>
         </div>
 

@@ -2,53 +2,35 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://aikisaschool.com/</loc>
+    <loc>https://www.aikisaschool.com/</loc>
   </url>
 
   <url>
-    <loc>https://aikisaschool.com/about</loc>
+    <loc>https://www.aikisaschool.com/about</loc>
   </url>
 
   <url>
-    <loc>https://aikisaschool.com/courses</loc>
+    <loc>https://www.aikisaschool.com/academics</loc>
   </url>
 
   <url>
-    <loc>https://aikisaschool.com/admission</loc>
+    <loc>https://www.aikisaschool.com/facilities</loc>
   </url>
 
   <url>
-    <loc>https://aikisaschool.com/contact</loc>
+    <loc>https://www.aikisaschool.com/admission</loc>
   </url>
 
   <url>
-    <loc>https://aikisaschool.com/achievements</loc>
-  </url>
-
-  <!-- Course Detail Pages -->
-
-  <url>
-    <loc>https://aikisaschool.com/programs/ai-foundations</loc>
+    <loc>https://www.aikisaschool.com/achievements</loc>
   </url>
 
   <url>
-    <loc>https://aikisaschool.com/programs/data-analytics</loc>
+    <loc>https://www.aikisaschool.com/campus-life</loc>
   </url>
 
   <url>
-    <loc>https://aikisaschool.com/programs/digital-marketing</loc>
-  </url>
-
-  <url>
-    <loc>https://aikisaschool.com/programs/shopify-ecommerce</loc>
-  </url>
-
-  <url>
-    <loc>https://aikisaschool.com/programs/content-creation</loc>
-  </url>
-
-  <url>
-    <loc>https://aikisaschool.com/programs/social-media-management</loc>
+    <loc>https://www.aikisaschool.com/contact</loc>
   </url>
 
 </urlset>

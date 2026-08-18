@@ -1,29 +1,9 @@
 import { Link } from "react-router-dom";
-import { BookOpen, Cpu, HeartHandshake, Users, Microscope, BadgeCheck } from "lucide-react";
-import { useState } from "react";
+import { BookOpen, Cpu, HeartHandshake, Users, Microscope } from "lucide-react";
 import SEO from "../components/SEO";
 import Hero from "../components/Hero";
 import { useInView } from "../hooks/useInView";
 import { useCountUp } from "../hooks/useCountUp";
-
-const values = [
-  {
-    title: "Academic strength",
-    text: "A rigorous, inquiry-led curriculum from early years to graduation, taught in small groups with regular feedback to families.",
-  },
-  {
-    title: "AI & technology learning",
-    text: "Every learner builds digital fluency — coding, data literacy, robotics and responsible use of AI — from their first year onward.",
-  },
-  {
-    title: "Truly free",
-    text: "No tuition. No hidden fees. Learning materials, labs and mentoring are provided so that cost is never a barrier.",
-  },
-  {
-    title: "Parent partnership",
-    text: "Open days, transparent reporting and an always-reachable pastoral team keep families close to their child's progress.",
-  },
-];
 
 const testimonials = [
   {
@@ -50,9 +30,9 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="AI KISA School — Free World-Class Education for Every Child"
-        description="AI KISA School is a tuition-free school where every learner grows in character, academics and technology with AI literacy woven through daily learning."
-        url="https://aikisaschool.com/"
+        title="AI KISA School Karachi | Free Future-Ready Education"
+        description="AI KISA School Karachi provides free, high-quality education with AI, coding, digital skills and future-ready learning for children."
+        url="https://www.aikisaschool.com/"
       />
 
       <Hero />
@@ -62,7 +42,7 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-2 xl:grid-cols-4">
             <div className="rounded-[20px] border border-[#e6e3dc] bg-white p-4 shadow-[0_8px_20px_rgba(13,31,31,0.05)] animate-fade-up-delay-1 sm:rounded-[24px] sm:p-5 md:rounded-[28px] md:p-6">
               <div className="text-3xl font-black tracking-[-0.08em] text-[#1B2A5C] sm:text-4xl md:text-5xl">{count1}%</div>
-              <p className="mt-2 text-sm font-semibold text-[#1F2937] sm:text-base md:text-lg">Tuition-free places</p>
+              <p className="mt-2 text-sm font-semibold text-[#1F2937] sm:text-base md:text-lg">Tuition free places</p>
             </div>
             <div className="rounded-[20px] border border-[#e6e3dc] bg-white p-4 shadow-[0_8px_20px_rgba(13,31,31,0.05)] animate-fade-up-delay-2 sm:rounded-[24px] sm:p-5 md:rounded-[28px] md:p-6">
               <div className="text-3xl font-black tracking-[-0.08em] text-[#1B2A5C] sm:text-4xl md:text-5xl">{count2}+</div>
@@ -93,7 +73,7 @@ export default function Home() {
               <BookOpen size={20} />
             </div>
             <h3 className="mt-4 text-xl font-semibold text-[#1F2937]">Academic strength</h3>
-            <p className="mt-3 text-sm leading-relaxed text-[#556269]">A rigorous, inquiry-led curriculum from early years to graduation, taught in small groups with regular feedback to families.</p>
+            <p className="mt-3 text-sm leading-relaxed text-[#556269]">A rigorous curriculum built around inquiry from early years to graduation, taught in small groups with regular feedback to families.</p>
           </div>
 
           <div className="rounded-[18px] border border-[#e7e1d8] bg-white p-6 shadow-[0_10px_28px_rgba(17,34,32,0.04)] hover:shadow-[0_12px_32px_rgba(17,34,32,0.08)] transition-shadow duration-300 animate-fade-up-delay-3">
@@ -101,7 +81,7 @@ export default function Home() {
               <Cpu size={20} />
             </div>
             <h3 className="mt-4 text-xl font-semibold text-[#1F2937]">AI & technology learning</h3>
-            <p className="mt-3 text-sm leading-relaxed text-[#556269]">Every learner builds digital fluency — coding, data literacy, robotics and responsible use of AI — from their first year onward.</p>
+            <p className="mt-3 text-sm leading-relaxed text-[#556269]">Every learner builds digital fluency through coding, data literacy, robotics and responsible use of AI from their first year onward.</p>
           </div>
 
           <div className="rounded-[18px] border border-[#e7e1d8] bg-white p-6 shadow-[0_10px_28px_rgba(17,34,32,0.04)] hover:shadow-[0_12px_32px_rgba(17,34,32,0.08)] transition-shadow duration-300 animate-fade-up-delay-2">
@@ -117,7 +97,7 @@ export default function Home() {
               <Users size={20} />
             </div>
             <h3 className="mt-4 text-xl font-semibold text-[#1F2937]">Parent partnership</h3>
-            <p className="mt-3 text-sm leading-relaxed text-[#556269]">Open days, transparent reporting and an always-reachable pastoral team keep families close to their child's progress.</p>
+            <p className="mt-3 text-sm leading-relaxed text-[#556269]">Open days, transparent reporting and an accessible pastoral team keep families close to their child's progress.</p>
           </div>
         </div>
       </section>
@@ -137,8 +117,8 @@ export default function Home() {
 
             <div className="px-4 sm:px-0 order-1 lg:order-2 animate-fade-up-delay-1">
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#1B2A5C]">AI, taught properly</p>
-              <h2 className="mt-4 sm:mt-3 text-2xl sm:text-3xl font-semibold text-[#1F2937] max-w-[36rem]">Technology fluency as a core subject — not an after-school club.</h2>
-              <p className="mt-5 sm:mt-3 text-base leading-7 text-[#4D5967] max-w-[40rem]">Learners move from block coding and digital citizenship in primary years to Python, data analysis and applied machine-learning projects before graduation.</p>
+              <h2 className="mt-4 sm:mt-3 text-2xl sm:text-3xl font-semibold text-[#1F2937] max-w-[36rem]">Technology fluency as a core subject, not an after school club.</h2>
+              <p className="mt-5 sm:mt-3 text-base leading-7 text-[#4D5967] max-w-[40rem]">Learners move from block coding and digital citizenship in primary years to Python, data analysis and applied machine learning projects before graduation.</p>
 
               <ul className="mt-8 sm:mt-6 space-y-4">
                 <li className="flex items-start gap-3 text-sm">
@@ -194,7 +174,7 @@ export default function Home() {
             Every child deserves a school that costs nothing and expects everything.
           </h2>
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-[#edf4ef]">
-            Admissions are open to all families. No tuition, no hidden fees — only a commitment to learning.
+            Admissions are open to all families. No tuition, no hidden fees, only a commitment to learning.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Link

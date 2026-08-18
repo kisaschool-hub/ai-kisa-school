@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
       <SEO
         title="Privacy Policy | AI KISA School"
         description="Read the Privacy Policy of AI KISA School to understand how we collect, use and protect your personal information."
-        url="https://aikisaschool.com/privacy-policy"
+        url="https://www.aikisaschool.com/privacy-policy"
       />
 
       <section className="max-w-5xl mx-auto px-6 py-16">
@@ -101,7 +101,7 @@ export default function PrivacyPolicy() {
             </h2>
 
             <p>
-              Our website may contain links to third-party websites. We are not
+              Our website may contain links to third party websites. We are not
               responsible for their privacy practices.
             </p>
           </div>

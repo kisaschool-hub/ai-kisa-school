@@ -2,21 +2,20 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 import PageHero from "../components/PageHero";
-import { IMG } from "../lib/site";
 
 const programmeContent = {
   primary: {
     title: "Foundations, curiosity and confidence",
     items: [
       "Students are introduced to friendly AI tools such as Canva, ChatGPT and Gemini alongside core literacy and numeracy blocks",
-      "Daily lessons focus on curiosity, hands-on play and growing digital literacy",
+      "Daily lessons focus on curiosity, hands on play and growing digital literacy",
       "Short project afternoons where children create simple digital stories and classroom builds",
     ],
   },
   middle: {
     title: "From exploration to practical skills",
     items: [
-      "Students move into text-based coding and start using tools like Claude for guided projects",
+      "Students move into text based coding and start using tools like Claude for guided projects",
       "Classes introduce structured computing, simple data handling and collaborative builds",
       "Assessments focus on learning progress and clear next steps shared with families",
     ],
@@ -25,8 +24,8 @@ const programmeContent = {
     title: "Applied skills, creativity and opportunity",
     items: [
       "Senior learners focus on digital marketing, data analytics and practical project portfolios",
-      "Capstone projects emphasise real-world problem solving and ethical technology use",
-      "Ongoing communication and content-creation skills prepare students for further study or work",
+      "Capstone projects emphasise real world problem solving and ethical technology use",
+      "Ongoing communication and content creation skills prepare students for further study or work",
     ],
   },
 };
@@ -40,11 +39,11 @@ const tabImages = {
 const subjects = [
   {
     title: "Mathematics",
-    description: "Problem-solving foundations with weekly applied challenges, reasoning practice and targeted small-group support.",
+    description: "Problem solving foundations with weekly applied challenges, reasoning practice and targeted small group support.",
   },
   {
     title: "Sciences",
-    description: "Practical science lessons with hands-on experiments that build observation, measurement and reporting skills.",
+    description: "Practical science lessons with hands on experiments that build observation, measurement and reporting skills.",
   },
   {
     title: "English & Communication",
@@ -60,7 +59,7 @@ const subjects = [
   },
   {
     title: "Entrepreneurship",
-    description: "Practical enterprise skills, simple project budgeting and community-focused ventures to grow initiative and problem solving.",
+    description: "Practical enterprise skills, simple project budgeting and ventures focused on the community to grow initiative and problem solving.",
   },
 ];
 
@@ -71,16 +70,16 @@ export default function Academics() {
   return (
     <>
       <SEO
-        title="Academics — Curriculum & AI Learning | AI KISA School"
-        description="Explore the rigorous Academics programme at AI KISA School, from primary foundations to AI-powered learning and practical teaching approaches."
-        url="https://aikisaschool.com/academics"
+        title="Academics | AI & Future-Ready Education | AI KISA School"
+        description="Explore the AI KISA School curriculum combining foundational education with AI, coding, robotics, digital literacy, creativity and life skills."
+        url="https://www.aikisaschool.com/academics"
       />
 
       <main className="bg-[#F5F8FC] text-[#1F2937]">
         <PageHero
           eyebrow="Academics"
           title="A rigorous curriculum where technology deepens learning."
-          description="From primary foundations to senior examinations, learners follow an inquiry-led programme with AI and computing woven into every stage."
+          description="From primary foundations to senior examinations, learners follow an inquiry based programme with AI and computing woven into every stage."
           backgroundImage="/Academics.webp"
           mobileBackgroundImage="/Academicsmobile.webp"
         />
@@ -133,7 +132,7 @@ export default function Academics() {
             <div className="w-full overflow-hidden rounded-[18px] border border-[#e7e1d8] bg-[#f3efe8] shadow-[0_12px_28px_rgba(17,34,32,0.04)]">
               <img
                 src={tabImages[activeTab]}
-                alt={`${activeTab} programme`}
+                alt={`${activeTab} stage of the AI KISA School curriculum`}
                 loading="lazy"
                 decoding="async"
                 className="block h-[300px] w-full bg-[#f3efe8] object-contain p-2 md:h-[360px]"
@@ -169,7 +168,7 @@ export default function Academics() {
             <div className="h-[280px] overflow-hidden rounded-[24px] border border-dashed border-[#cfc5ba] bg-[#f3efe8]">
               <img
                 src="/aboutacad.webp"
-                alt="Teaching approach illustration"
+                alt="AI KISA School teaching approach and classroom learning illustration"
                 loading="lazy"
                 decoding="async"
                 className="h-full w-full object-contain"
@@ -179,10 +178,10 @@ export default function Academics() {
             <div>
               <p className="text-[0.72rem] font-bold uppercase tracking-[0.2em] text-[#1B2A5C]">Teaching approach</p>
               <h2 className="mt-4 text-[2.4rem] font-black leading-[1.08] tracking-[-0.06em] text-[#1F2937] md:text-[3rem]">
-                From classroom learning to real-world creation
+                From classroom learning to real world creation
               </h2>
               <p className="mt-5 max-w-[620px] text-[1.04rem] leading-8 text-[#4d5967]">
-                We believe students learn best when they can explore, experiment and build. Through project-based learning, technology and creative problem-solving, students develop strong academic foundations alongside practical skills in AI, robotics, digital marketing, content creation, analytics, communication and entrepreneurship — preparing them to turn ideas into meaningful projects and real-world opportunities.
+                We believe students learn best when they can explore, experiment and build. Through project based learning, technology and creative problem solving, students develop strong academic foundations alongside practical skills in AI, robotics, digital marketing, content creation, analytics, communication and entrepreneurship, preparing them to turn ideas into meaningful projects and real world opportunities.
               </p>
             </div>
           </div>
@@ -194,7 +193,7 @@ export default function Academics() {
               Every child deserves a school that costs nothing and expects everything.
             </h2>
             <p className="mx-auto mt-5 max-w-3xl text-[1.08rem] leading-8 text-[#edf4ef]">
-              Admissions are open to all families. No tuition, no hidden fees — only a commitment to learning.
+              Admissions are open to all families. No tuition, no hidden fees, only a commitment to learning.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
               <Link

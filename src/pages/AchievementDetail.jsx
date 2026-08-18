@@ -77,10 +77,10 @@ export default function AchievementDetail() {
 
             <div className="mt-7 space-y-6 text-[1.02rem] leading-8 text-[#4d5967]">
               <p>
-                Students from AI KISA School proudly represented their institution at AI PRENEUR'26, a city-wide innovation competition organized by Fatimiyah College.
+                Students from AI KISA School proudly represented their institution at AI PRENEUR'26, a city wide innovation competition organized by Fatimiyah College.
               </p>
               <p>
-                Representing AI KISA School, our students introduced an AI-powered School Management SaaS Platform designed to make educational institutions smarter, faster and more efficient.
+                Representing AI KISA School, our students introduced an AI powered School Management SaaS Platform designed to make educational institutions smarter, faster and more efficient.
               </p>
               <p>
                 Their confidence, teamwork, communication skills and presentation impressed the judges, earning 1st Position together with a cash prize of PKR 100,000.
@@ -140,7 +140,7 @@ export default function AchievementDetail() {
             AI solutions developed by our students
           </h2>
           <p className="mx-auto mt-5 max-w-4xl text-[1.02rem] leading-8 text-[#4d5967]">
-            During AI PRENEUR'26, our students developed a complete AI-powered School Management SaaS Platform with multiple smart modules.
+            During AI PRENEUR'26, our students developed a complete AI powered School Management SaaS Platform with multiple smart modules.
           </p>
         </div>
 
@@ -151,7 +151,7 @@ export default function AchievementDetail() {
               Smart Attendance Management
             </h3>
             <p className="mt-4 text-[1rem] leading-7 text-[#4d5967]">
-              Automated attendance with digital records and real-time reporting.
+              Automated attendance with digital records and reporting in real time.
             </p>
           </div>
 

@@ -7,7 +7,7 @@ const facilities = [
   {
     title: "Computer & AI lab",
     image: IMG.computerLab,
-    body: "Networked workstations for coding, data work and supervised model-building sessions.",
+    body: "Networked workstations for coding, data work and supervised model building sessions.",
   },
   {
     title: "Robotics workshop",
@@ -31,15 +31,15 @@ export default function Facilities() {
   return (
     <>
       <SEO
-        title="Facilities | AI KISA School"
-        description="Explore the learning environment at AI KISA School, including AI computer labs, robotics workshops, library spaces and sports grounds."
-        url="https://aikisaschool.com/facilities"
+        title="School Facilities | AI KISA School Karachi"
+        description="Explore AI KISA School facilities including computer labs, smart classrooms, robotics, digital learning spaces and a safe learning environment."
+        url="https://www.aikisaschool.com/facilities"
       />
 
       <main className="bg-[#F5F8FC] text-[#1F2937]">
         <PageHero
           eyebrow="Facilities"
-          title="Spaces designed for hands-on, ambitious learning."
+          title="Spaces designed for hands on, ambitious learning."
           description="Laboratories, workshops and study spaces are open to every learner at no cost, including equipment and materials."
           backgroundImage="/Facilities.webp"
           mobileBackgroundImage="/Facilitiesmobile.webp"
@@ -93,7 +93,7 @@ export default function Facilities() {
               Every child deserves a school that costs nothing and expects everything.
             </h2>
             <p className="mx-auto mt-5 max-w-3xl text-[1.08rem] leading-8 text-[#edf4ef]">
-              Admissions are open to all families. No tuition, no hidden fees — only a commitment to learning.
+              Admissions are open to all families. No tuition, no hidden fees, only a commitment to learning.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
               <Link
