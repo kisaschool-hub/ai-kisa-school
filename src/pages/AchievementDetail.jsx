@@ -39,7 +39,7 @@ export default function AchievementDetail() {
           <img
             src={sliderImages[currentImage]}
             alt="AI PRENEUR'26"
-            className="h-[360px] w-full object-cover sm:h-[440px] lg:h-[540px]"
+            className="h-[260px] w-full object-cover sm:h-[360px] md:h-[440px] lg:h-[540px]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#1B2A5C]/90 via-[#1B2A5C]/70 to-[#1B2A5C]/30" />
 
@@ -48,14 +48,14 @@ export default function AchievementDetail() {
               <span className="inline-flex items-center rounded-full bg-[#DFB863] px-4 py-2 text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[#1B2A5C]">
                 Student achievement
               </span>
-              <h1 className="mt-5 text-[2.3rem] font-black leading-[1.02] tracking-[-0.06em] text-white sm:text-[3rem] md:text-[4rem]">
+              <h1 className="mt-5 text-[2rem] font-black leading-[1.02] tracking-[-0.06em] text-white sm:text-[3rem] md:text-[4rem]">
                 AI PRENEUR'26
               </h1>
-              <p className="mt-4 text-[1.1rem] font-semibold text-[#edf4ef] sm:text-[1.35rem]">
+              <p className="mt-4 text-[1rem] font-semibold text-[#edf4ef] sm:text-[1.35rem]">
                 🥇 1st Position
               </p>
 
-              <div className="mt-6 space-y-2 text-[0.98rem] leading-7 text-[#edf4ef] sm:text-[1.05rem]">
+              <div className="mt-6 space-y-2 text-[0.92rem] leading-7 text-[#edf4ef] sm:text-[1.05rem]">
                 <p><strong>Organized By:</strong> Fatimiyah College</p>
                 <p><strong>Date:</strong> 29 January 2026</p>
                 <p><strong>Location:</strong> Karachi, Pakistan</p>

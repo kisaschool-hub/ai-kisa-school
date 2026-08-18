@@ -37,7 +37,7 @@ export default function IqbalDetail() {
             key={currentImage}
             src={sliderImages[currentImage]}
             alt="Iqbal Day Competition"
-            className="h-[360px] w-full object-cover sm:h-[440px] lg:h-[540px]"
+            className="h-[260px] w-full object-cover sm:h-[360px] md:h-[440px] lg:h-[540px]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#1B2A5C]/90 via-[#1B2A5C]/70 to-[#1B2A5C]/30" />
 
@@ -46,17 +46,17 @@ export default function IqbalDetail() {
               <span className="inline-flex items-center rounded-full bg-[#DFB863] px-4 py-2 text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[#1B2A5C]">
                 Student achievement
               </span>
-              <h1 className="mt-5 text-[2.3rem] font-black leading-[1.02] tracking-[-0.06em] text-white sm:text-[3rem] md:text-[4rem]">
+              <h1 className="mt-5 text-[2rem] font-black leading-[1.02] tracking-[-0.06em] text-white sm:text-[3rem] md:text-[4rem]">
                 Iqbal Day Competition
               </h1>
 
-              <div className="mt-5 flex flex-wrap items-center gap-3 text-[1.05rem] font-semibold text-[#edf4ef]">
+              <div className="mt-5 flex flex-wrap items-center gap-3 text-[0.92rem] font-semibold text-[#edf4ef] sm:text-[1.05rem]">
                 <span>🥈 2nd Position</span>
                 <span>&</span>
                 <span>🥉 3rd Position</span>
               </div>
 
-              <div className="mt-6 space-y-2 text-[0.98rem] leading-7 text-[#edf4ef] sm:text-[1.05rem]">
+              <div className="mt-6 space-y-2 text-[0.9rem] leading-7 text-[#edf4ef] sm:text-[1.05rem]">
                 <p><strong>Competition:</strong> Iqbal Day Urdu Speech Competition</p>
                 <p><strong>Organizer:</strong> Qamar Bani Hashim School</p>
                 <p><strong>Date:</strong> 9 November 2025</p>

@@ -56,8 +56,8 @@ export default function Achievements() {
         eyebrow="Achievements"
         title="Results that prove free education can be excellent education."
         description="Our learners compete, publish and graduate alongside the strongest schools in the region."
-        backgroundImage="/Achievementhero.png"
-        mobileBackgroundImage="/Achievementheromobile.png"
+        backgroundImage="/Achievementhero.webp"
+        mobileBackgroundImage="/Achievementheromobile.webp"
       />
 
       <section className="-mt-3 pb-8 pt-10">

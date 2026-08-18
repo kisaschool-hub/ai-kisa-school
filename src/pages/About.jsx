@@ -47,8 +47,8 @@ const About = () => {
           eyebrow="About us"
           title="A school founded on one belief: talent is everywhere, opportunity is not."
           description="AI KISA School was created so that ability — not family income — decides how far a young person can go."
-          backgroundImage="/About.png"
-          mobileBackgroundImage="/Aboutmobile.png"
+          backgroundImage="/About.webp"
+          mobileBackgroundImage="/Aboutmobile.webp"
         />
 
         <section className="bg-[#F5F8FC] kisa-section--tight">
@@ -70,7 +70,13 @@ const About = () => {
                   </p>
               </div>
               <div className="ml-auto h-[320px] w-full max-w-[520px] rounded-[18px] overflow-hidden border border-[#e7e1d8] bg-white shadow-[0_10px_24px_rgba(17,34,32,0.04)]">
-                <img src="/Homecomp.png" alt="Students in a classroom" className="h-full w-full object-cover" />
+                <img
+                  src="/Homecomp.webp"
+                  alt="Students in a classroom"
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover"
+                />
               </div>
             </div>
           </div>

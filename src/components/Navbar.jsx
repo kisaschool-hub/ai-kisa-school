@@ -68,7 +68,7 @@ export default function Navbar() {
       />
 
       <div
-        className={`fixed right-0 top-0 h-full w-[85%] max-w-sm bg-white shadow-2xl transition-transform duration-300 lg:hidden ${
+        className={`fixed right-0 top-0 h-full w-[85%] max-w-sm border-l border-[#dfe6f0] bg-[#F7F8FB]/95 shadow-[0_20px_45px_rgba(27,42,92,0.18)] backdrop-blur-xl transition-transform duration-300 lg:hidden ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -87,7 +87,7 @@ export default function Navbar() {
               onClick={closeMenu}
               className={({ isActive }) =>
                 `rounded-2xl px-4 py-3 font-semibold ${
-                  isActive ? "bg-[#1B2A5C] text-white" : "text-slate-700 hover:bg-slate-100"
+                  isActive ? "bg-[#1B2A5C] text-white" : "text-[#1B2A5C] hover:bg-[#EAF1FF]"
                 }`
               }
             >

@@ -101,8 +101,8 @@ function Contact() {
           eyebrow="Contact"
           title="Talk to us, or come and see the school for yourself."
           description="Our admissions and pastoral teams are happy to answer questions from families, partners and the wider community."
-          backgroundImage="/Contact.png"
-          mobileBackgroundImage="/Contactmobile.png"
+          backgroundImage="/Contact.webp"
+          mobileBackgroundImage="/Contactmobile.webp"
         />
 
         <section className="container-page grid gap-12 py-20 lg:grid-cols-[0.85fr_1.15fr]">

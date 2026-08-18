@@ -41,8 +41,8 @@ export default function Facilities() {
           eyebrow="Facilities"
           title="Spaces designed for hands-on, ambitious learning."
           description="Laboratories, workshops and study spaces are open to every learner at no cost, including equipment and materials."
-          backgroundImage="/Facilities.png"
-          mobileBackgroundImage="/Facilitiesmobile.png"
+          backgroundImage="/Facilities.webp"
+          mobileBackgroundImage="/Facilitiesmobile.webp"
         />
 
         <section className="container-page py-20">

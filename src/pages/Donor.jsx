@@ -100,8 +100,8 @@ export default function Donor() {
           eyebrow="DONOR"
           title="Help us give every child a real chance."
           description="Your support helps AI KISA School keep learning free, future-focused and accessible for students who deserve quality education and a path to opportunity."
-          backgroundImage="/Donor.png"
-          mobileBackgroundImage="/Donormobile.png"
+          backgroundImage="/Donor.webp"
+          mobileBackgroundImage="/Donormobile.webp"
         />
 
         <section className="container-page py-20 md:py-24">
@@ -118,8 +118,10 @@ export default function Donor() {
 
             <div className="overflow-hidden rounded-[22px] border border-[#e7e1d8] bg-white shadow-[0_12px_28px_rgba(17,34,32,0.04)]">
               <img
-                src="/Homecomp.png"
+                src="/Homecomp.webp"
                 alt="Students learning with technology in a supportive classroom environment"
+                loading="lazy"
+                decoding="async"
                 className="block h-[320px] w-full object-cover md:h-[420px] lg:h-[460px]"
               />
             </div>
@@ -131,8 +133,10 @@ export default function Donor() {
             <div className="grid items-center gap-10 lg:grid-cols-[0.92fr_1.08fr]">
               <div className="order-2 overflow-hidden rounded-[22px] border border-[#e7e1d8] bg-[#F5F8FC] shadow-[0_12px_28px_rgba(17,34,32,0.04)] lg:order-1">
                 <img
-                  src="/About.png"
+                  src="/About.webp"
                   alt="Students and community members engaged in learning and impact activities"
+                  loading="lazy"
+                  decoding="async"
                   className="block h-[320px] w-full object-cover md:h-[420px] lg:h-[460px]"
                 />
               </div>

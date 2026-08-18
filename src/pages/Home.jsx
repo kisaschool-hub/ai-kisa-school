@@ -126,7 +126,13 @@ export default function Home() {
         <div className="container-page">
           <div className="grid items-center gap-8 lg:gap-6 lg:grid-cols-[1fr_1fr]">
             <div className="px-4 sm:px-0 order-2 lg:order-1 animate-fade-up-delay-2">
-              <img src="/Homecomp.png" alt="Students assembling a robotics project in a technology lab" className="aspect-[5/4] w-full rounded-3xl object-cover" />
+              <img
+                src="/Homecomp.webp"
+                alt="Students assembling a robotics project in a technology lab"
+                loading="lazy"
+                decoding="async"
+                className="aspect-[5/4] w-full rounded-3xl object-cover"
+              />
             </div>
 
             <div className="px-4 sm:px-0 order-1 lg:order-2 animate-fade-up-delay-1">

@@ -32,9 +32,9 @@ const programmeContent = {
 };
 
 const tabImages = {
-  primary: "/AcademicsPrimary.png",
-  middle: "/AcademicsMiddle.png",
-  senior: "/AcademicsSenior.png",
+  primary: "/AcademicsPrimary.webp",
+  middle: "/AcademicsMiddle.webp",
+  senior: "/AcademicsSenior.webp",
 };
 
 const subjects = [
@@ -81,8 +81,8 @@ export default function Academics() {
           eyebrow="Academics"
           title="A rigorous curriculum where technology deepens learning."
           description="From primary foundations to senior examinations, learners follow an inquiry-led programme with AI and computing woven into every stage."
-          backgroundImage="/Academics.png"
-          mobileBackgroundImage="/Academicsmobile.png"
+          backgroundImage="/Academics.webp"
+          mobileBackgroundImage="/Academicsmobile.webp"
         />
 
         <section className="container-page kisa-section--tight">
@@ -134,6 +134,8 @@ export default function Academics() {
               <img
                 src={tabImages[activeTab]}
                 alt={`${activeTab} programme`}
+                loading="lazy"
+                decoding="async"
                 className="block h-[300px] w-full bg-[#f3efe8] object-contain p-2 md:h-[360px]"
               />
             </div>
@@ -166,8 +168,10 @@ export default function Academics() {
           <div className="grid items-center gap-8 md:grid-cols-[0.9fr_1.1fr]">
             <div className="h-[280px] overflow-hidden rounded-[24px] border border-dashed border-[#cfc5ba] bg-[#f3efe8]">
               <img
-                src="/aboutacad.png"
+                src="/aboutacad.webp"
                 alt="Teaching approach illustration"
+                loading="lazy"
+                decoding="async"
                 className="h-full w-full object-contain"
               />
             </div>

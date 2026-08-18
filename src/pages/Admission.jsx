@@ -95,8 +95,8 @@ function Admission() {
           eyebrow="Admission"
           title="Admission is open — and it costs nothing."
           description="There is no tuition, no application fee and no entrance payment. We welcome enquiries from every family."
-          backgroundImage="/Admission.png"
-          mobileBackgroundImage="/Admissionmobile.png"
+          backgroundImage="/Admission.webp"
+          mobileBackgroundImage="/Admissionmobile.webp"
         />
 
         <section className="container-page kisa-section--tight">

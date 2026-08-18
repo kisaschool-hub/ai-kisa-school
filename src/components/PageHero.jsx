@@ -18,9 +18,9 @@ export default function PageHero({
   const hasSideImage = Boolean(rightImage);
 
   return (
-    <section className="relative isolate overflow-hidden bg-transparent text-ink-foreground">
+    <section className="relative isolate min-h-[360px] overflow-hidden bg-transparent text-ink-foreground sm:min-h-[420px] md:min-h-[500px] lg:min-h-[560px]">
       {bg ? (
-        <picture>
+        <picture className="absolute inset-0 h-full w-full">
           {mobileBackgroundImage ? (
             <source media="(max-width: 767px)" srcSet={mobileBackgroundImage} />
           ) : null}
@@ -28,7 +28,10 @@ export default function PageHero({
             src={bg}
             alt=""
             aria-hidden="true"
-            className="absolute inset-0 h-full w-full object-cover object-center"
+            loading="eager"
+            fetchPriority="high"
+            decoding="sync"
+            className="h-full w-full object-cover object-center"
           />
         </picture>
       ) : null}
@@ -56,7 +59,13 @@ export default function PageHero({
 
         {hasSideImage ? (
           <div className="fade-up relative py-8 md:py-10">
-            <img src={rightImage} alt="" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-[var(--shadow-lift)]" />
+            <img
+              src={rightImage}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              className="aspect-[4/3] w-full rounded-3xl object-cover shadow-[var(--shadow-lift)]"
+            />
             {statValue ? (
               <div className="surface-card absolute -bottom-6 left-4 hidden max-w-[16rem] p-4 text-foreground sm:block">
                 <p className="font-display text-2xl font-semibold text-primary">{statValue}</p>
